@@ -5,11 +5,10 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<?xml version="1.0" encoding="UTF-8"?>
-
 
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.ListView?>
+<?import hopverkefni.vidmot.PacmanBord?>
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.PacmanController">
     <HBox>
         <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="160" text="Tími:" />
@@ -17,7 +16,7 @@
     </HBox>
     <HBox>
         <children>
-            <SnakurBord fx:id="snakeBord" prefHeight="400.0" prefWidth="365.0" />
+            <PacmanBord fx:id="snakeBord" prefHeight="400.0" prefWidth="365.0" />
             <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0" />
         </children>
     </HBox>
