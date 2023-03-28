@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import hopverkefni.vidmot.Pacman?>
+<?import hopverkefni.vidmot.Draugur?>
+<fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" prefHeight="370.0" prefWidth="400.0">
+    <Pacman fx:id="fxPacman" x="50" y="50"/>
+    <Draugur fx:id="fxDraugur" x="20" y="190"/>
+</fx:root>

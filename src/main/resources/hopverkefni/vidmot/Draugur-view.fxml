@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Rectangle2D?>
+<fx:root fitHeight="30.0" fitWidth="28.0" type="javafx.scene.image.ImageView" xmlns=" http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <Image preserveRatio="true" requestedHeight="30" url="@DraugurBlár.png"/>
+    <viewport>
+        <Rectangle2D/>
+    </viewport>
+</fx:root>
