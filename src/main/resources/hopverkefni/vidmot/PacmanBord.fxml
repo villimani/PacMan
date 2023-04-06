@@ -8,7 +8,11 @@
 
 <?import hopverkefni.vidmot.Pacman?>
 <?import hopverkefni.vidmot.Draugur?>
-<fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" prefHeight="370.0" prefWidth="400.0">
+<?import hopverkefni.vidmot.Veggtegund1?>
+<?import hopverkefni.vidmot.Veggtegund2?>
+<fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" prefHeight="250.0" prefWidth="200.0">
     <Pacman fx:id="fxPacman" x="50" y="50"/>
     <Draugur fx:id="fxDraugur" x="20" y="190"/>
+    <Veggtegund1 x="1" y="10"/>
+    <Veggtegund2 x="60" y="10"/>
 </fx:root>
