@@ -1,10 +1,14 @@
 package hopverkefni.vidmot;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.util.Duration;
+import vinnsla.Leikur;
 import vinnsla.Stefna;
 
 import java.util.HashMap;
@@ -17,7 +21,17 @@ public class PacmanController {
     @FXML
     private ListView<Integer> fxStigin;
 
+    @FXML
     private PacmanBord fxPacmanBord;
+
+    @FXML
+    private Label fxStig;
+
+    private Timeline t;
+
+    private Leikur leikur;
+
+    public static final int INTERVAL = 100;
 
 
     @FXML
@@ -33,7 +47,7 @@ public class PacmanController {
                 });
     }
 
-    private void adgerdLykill(KeyEvent event) {
+   private void adgerdLykill(KeyEvent event) {
         try {
             if (map.get(event.getCode()) == null) {
                 event.consume();
@@ -47,8 +61,23 @@ public class PacmanController {
         }
     }
 
+    public void hefjaLeik() {
+        leikur = new Leikur();
+        fxStig.textProperty().
+                bind(leikur.stig().asString());
+        KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
+                e -> {
+                    fxPacmanBord.afram();
+                    fxPacmanBord.aframDraugar();
+                    leikur.haekkaStigin();
+                });
+        t = new Timeline(k);
+        t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
+        t.play();
+    }
+
     public void setStefna(int s) {
-        PacmanBord.setStefna(s);
+        //PacmanBord.setStefna(s);
     }
 
 }

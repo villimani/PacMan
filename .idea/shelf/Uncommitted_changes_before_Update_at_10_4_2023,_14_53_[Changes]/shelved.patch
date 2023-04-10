@@ -1,0 +1,81 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"f1f64261-627c-418e-90e7-9861e871a147\" name=\"Changes\" comment=\"setja upp menu\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund1.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund2.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/veggtegund1.fxml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/veggtegund2.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/PacmanBord.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/PacmanBord.fxml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"FxmlFile\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Ndu76ZDW5WjGkZTrkVQhoxvkeV\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"last_opened_file_path\": \"/Users/vilmundurmani/Desktop/PacMan\"\n  }\n}]]></component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"f1f64261-627c-418e-90e7-9861e871a147\" name=\"Changes\" comment=\"\" />\n      <created>1680006112628</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1680006112628</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Fyrsta commit með adal view\">\n      <created>1680006751854</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680006751854</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Setja inn PacManBord og laga aðal view þannig að virki\">\n      <created>1680007289728</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680007289728</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Refactora nafn í adal-view\">\n      <created>1680007414297</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680007414297</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Setja inn myndir af hlutunum\">\n      <created>1680007773345</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680007773345</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka\">\n      <created>1680008886043</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680008886043</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"setja upp menu\">\n      <created>1680181930381</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1680181930381</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"7\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Fyrsta commit með adal view\" />\n    <MESSAGE value=\"Setja inn PacManBord og laga aðal view þannig að virki\" />\n    <MESSAGE value=\"Refactora nafn í adal-view\" />\n    <MESSAGE value=\"Setja inn myndir af hlutunum\" />\n    <MESSAGE value=\"Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka\" />\n    <MESSAGE value=\"setja upp menu\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"setja upp menu\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 20832b8633d0e16303f53d9ab09ca3bdc68b8871)
++++ b/.idea/workspace.xml	(date 1680886205354)
+@@ -4,19 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="setja upp menu">
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund1.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund2.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/veggtegund1.fxml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/veggtegund2.fxml" afterDir="false" />
++    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="2 veggtegundir">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/PacmanBord.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/PacmanBord.fxml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -45,15 +34,15 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "last_opened_file_path": "/Users/vilmundurmani/Desktop/PacMan"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/Users/vilmundurmani/Desktop/PacMan&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -105,7 +94,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1680181930381</updated>
+     </task>
+-    <option name="localTasksCounter" value="7" />
++    <task id="LOCAL-00007" summary="2 veggtegundir">
++      <created>1680809403524</created>
++      <option name="number" value="00007" />
++      <option name="presentableId" value="LOCAL-00007" />
++      <option name="project" value="LOCAL" />
++      <updated>1680809403524</updated>
++    </task>
++    <option name="localTasksCounter" value="8" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -127,6 +123,7 @@
+     <MESSAGE value="Setja inn myndir af hlutunum" />
+     <MESSAGE value="Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka" />
+     <MESSAGE value="setja upp menu" />
+-    <option name="LAST_COMMIT_MESSAGE" value="setja upp menu" />
++    <MESSAGE value="2 veggtegundir" />
++    <option name="LAST_COMMIT_MESSAGE" value="2 veggtegundir" />
+   </component>
+ </project>
+\ No newline at end of file

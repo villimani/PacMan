@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="2 veggtegundir">
-      <change afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Stefna.java" afterDir="false" />
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Byrjaður að reyna að láta pacman hreyfast">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680181930381</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Byrjaður að reyna að láta pacman hreyfast">
+      <created>1681155217329</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681155217329</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +128,7 @@
     <MESSAGE value="Setja inn myndir af hlutunum" />
     <MESSAGE value="Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka" />
     <MESSAGE value="setja upp menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="setja upp menu" />
+    <MESSAGE value="Byrjaður að reyna að láta pacman hreyfast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Byrjaður að reyna að láta pacman hreyfast" />
   </component>
 </project>
