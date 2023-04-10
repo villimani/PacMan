@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.PacmanController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.PacmanController">
     <HBox>
         <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="160" text="Tími:" />
         <Label fx:id="timi" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="40" text="00.00" />
@@ -17,7 +17,7 @@
         </children>
     </HBox>
     <HBox>
-        <Label fx:id="fxStigi" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="30" text="Stig:" />
+        <Label fx:id="fxStiglabel" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="30" text="Stig:" />
         <Label fx:id="fxStig" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="40" text="0">
             <padding>
                 <Insets right="200.0" />

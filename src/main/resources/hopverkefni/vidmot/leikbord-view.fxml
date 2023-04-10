@@ -46,6 +46,7 @@
     <Veggtegund2 x="590" y="340"/>
 
     <!-- Veggir í miðju -->
-    <Veggtegund1 x="45" y="40"/>
-    <Veggtegund2 x="45" y="40"/>
+    <Veggtegund1 x="41" y="40"/>
+    <Veggtegund2 x="41" y="40"/>
+    <Veggtegund2 x="41" y="60"/>
 </fx:root>
