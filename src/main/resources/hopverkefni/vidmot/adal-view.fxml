@@ -12,7 +12,7 @@
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord"  prefHeight="400.0" prefWidth="365.0"/>
+            <PacmanBord fx:id="fxPacmanBord"/>
             <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0" />
         </children>
     </HBox>

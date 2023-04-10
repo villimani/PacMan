@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import hopverkefni.vidmot.Pacman?>
+<?import hopverkefni.vidmot.Draugur?>
+<?import hopverkefni.vidmot.Veggtegund1?>
+<?import hopverkefni.vidmot.Veggtegund2?>
+<fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <Pacman fx:id="fxPacman" x="300" y="300"/>
+    <Draugur fx:id="fxDraugur" x="340" y="300"/>
+    <!-- Þak -->
+    <Veggtegund1 x="1" y="1"/>
+    <Veggtegund1 x="100" y="1"/>
+    <Veggtegund1 x="200" y="1"/>
+    <Veggtegund1 x="300" y="1"/>
+    <Veggtegund1 x="400" y="1"/>
+    <Veggtegund1 x="500" y="1"/>
+
+    <!-- Gólf -->
+    <Veggtegund1 x="1" y="440"/>
+    <Veggtegund1 x="100" y="440"/>
+    <Veggtegund1 x="200" y="440"/>
+    <Veggtegund1 x="300" y="440"/>
+    <Veggtegund1 x="400" y="440"/>
+    <Veggtegund1 x="500" y="440"/>
+
+    <!-- Vinstri veggur -->
+    <Veggtegund2 x="1" y="1"/>
+    <Veggtegund2 x="1" y="100"/>
+    <Veggtegund1 x="1" y="200"/>
+    <Veggtegund1 x="1" y="240"/>
+    <Veggtegund2 x="1" y="240"/>
+    <Veggtegund2 x="1" y="340"/>
+
+    <!-- Hægri veggur -->
+    <Veggtegund2 x="590" y="1"/>
+    <Veggtegund2 x="590" y="100"/>
+    <Veggtegund1 x="500" y="200"/>
+    <Veggtegund1 x="500" y="240"/>
+    <Veggtegund2 x="590" y="240"/>
+    <Veggtegund2 x="590" y="340"/>
+
+    <!-- Veggir í miðju -->
+    <Veggtegund1 x="45" y="40"/>
+    <Veggtegund2 x="45" y="40"/>
+</fx:root>
