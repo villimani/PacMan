@@ -33,11 +33,8 @@ public class Leikur {
     /**
      * Hækkar stigin
      */
-    public void haekkaStigin() {
-        setStiginProperty(stiginProperty.get() + 1);
+    public void haekkaStigin(int fjoldistiga) {
+        setStiginProperty(stiginProperty.get() + fjoldistiga);
     }
 
-    public int getStiginProperty() {
-        return stiginProperty.get();
-    }
 }

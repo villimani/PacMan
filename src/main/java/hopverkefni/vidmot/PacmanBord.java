@@ -30,4 +30,11 @@ public class PacmanBord extends Pane {
         fxDraugur.setRotate(0);
     }
 
+    public boolean bordarmat() {
+        if ( fxPacman.getX()==150) {
+            return true;
+        }
+        return false;
+    }
+
 }

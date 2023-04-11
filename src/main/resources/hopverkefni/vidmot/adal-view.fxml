@@ -18,7 +18,7 @@
     </HBox>
     <HBox>
         <Label fx:id="fxStiglabel" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="30" text="Stig:" />
-        <Label fx:id="fxStig" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="40" text="0">
+        <Label fx:id="fxStig" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="400" text="0">
             <padding>
                 <Insets right="200.0" />
             </padding></Label>

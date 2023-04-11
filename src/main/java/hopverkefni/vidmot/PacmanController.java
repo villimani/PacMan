@@ -69,12 +69,19 @@ public class PacmanController {
                 e -> {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
-                    leikur.haekkaStigin();
+                    if(fxPacmanBord.bordarmat()) {
+                        System.out.println("Plús 10");
+                        leikur.haekkaStigin(10);
+                    }
                 });
         t = new Timeline(k);
         t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
         t.play();
     }
+
+
+
+
 
     public void setStefna(int s) {
         //PacmanBord.setStefna(s);
