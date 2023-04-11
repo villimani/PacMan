@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Pacman og draugur hreyfast báðir">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Matur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" afterDir="false" />
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Byrjað að búa til mat og aðlaga stigakerfið að honum">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681161502676</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Byrjað að búa til mat og aðlaga stigakerfið að honum">
+      <created>1681239394291</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681239394291</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +139,7 @@
     <MESSAGE value="setja upp menu" />
     <MESSAGE value="Byrjaður að reyna að láta pacman hreyfast" />
     <MESSAGE value="Pacman og draugur hreyfast báðir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pacman og draugur hreyfast báðir" />
+    <MESSAGE value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
+    <option name="LAST_COMMIT_MESSAGE" value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
   </component>
 </project>
