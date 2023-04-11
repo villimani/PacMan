@@ -9,6 +9,14 @@ public class PacmanBord extends Pane {
     private Pacman fxPacman;
     @FXML
     private Draugur fxDraugur;
+
+    @FXML
+    private Veggtegund1 fxVeggtegund1;
+
+    @FXML
+    private Veggtegund2 fxVeggtegund2;
+
+    private boolean erAvegg=false;
     public PacmanBord() {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
     }
@@ -31,10 +39,26 @@ public class PacmanBord extends Pane {
     }
 
     public boolean bordarmat() {
-        if ( fxPacman.getX()==150) {
-            return true;
-        }
-        return false;
+        return fxPacman.getX() == 100;
+    }
+    public boolean bordarfeitannmat() {
+        return fxPacman.getX() == 110;
     }
 
+   // public boolean athugaPacmanavegg(Veggtegund1 p, Veggtegund2 p2) {
+   //     if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+   //         erAvegg = true;
+   //         if (erAvegg) {
+   //             fxPacman.xProperty().bind(p.getUppfaertYProperty());
+   //         } else {
+   //             erAvegg = false;
+   //             fxPacman.xProperty().unbind();
+   //         }
+   //     } else {
+    //         fxPacman.yProperty().unbind();
+   //         erAvegg = false;
+   //         fxPacman.setX((int)(fxPacman.getX() + 5));
+   //     }
+    //    return false;
+   // }
 }

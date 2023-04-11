@@ -31,7 +31,7 @@ public class PacmanController {
 
     private Leikur leikur;
 
-    public static final int INTERVAL = 100;
+    public static final int INTERVAL = 10;
 
 
     @FXML
@@ -72,6 +72,10 @@ public class PacmanController {
                     if(fxPacmanBord.bordarmat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
+                    }
+                    if(fxPacmanBord.bordarfeitannmat()) {
+                        System.out.println("Plús 100");
+                        leikur.haekkaStigin(100);
                     }
                 });
         t = new Timeline(k);

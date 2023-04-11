@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root rotate="360" fill="$fxMatur" width="15" height="15" type="javafx.scene.shape.Rectangle" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:define xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+        <String fx:id="fxMatur" fx:value="GREEN" />
+        <Integer fx:id="OFFSET" fx:value="5" />
+    </fx:define>
+</fx:root>

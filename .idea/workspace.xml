@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Byrjað að búa til mat og aðlaga stigakerfið að honum">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" afterDir="false" />
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="smávægilegar breytingar varla neitt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/FeiturMatur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/feiturmatur.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -115,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681239394291</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="smávægilegar breytingar varla neitt">
+      <created>1681239922015</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681239922015</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +151,7 @@
     <MESSAGE value="Byrjaður að reyna að láta pacman hreyfast" />
     <MESSAGE value="Pacman og draugur hreyfast báðir" />
     <MESSAGE value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
+    <MESSAGE value="smávægilegar breytingar varla neitt" />
+    <option name="LAST_COMMIT_MESSAGE" value="smávægilegar breytingar varla neitt" />
   </component>
 </project>
