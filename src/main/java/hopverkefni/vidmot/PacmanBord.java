@@ -1,6 +1,9 @@
 package hopverkefni.vidmot;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 
 public class PacmanBord extends Pane {
@@ -10,13 +13,13 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
-    @FXML
-    private Veggtegund1 fxVeggtegund1;
 
-    @FXML
-    private Veggtegund2 fxVeggtegund2;
+    private ObservableList<Node> fxVeggtegund1 = FXCollections.observableArrayList();
 
-    private boolean erAvegg=false;
+    private ObservableList<Node> fxVeggtegund2 = FXCollections.observableArrayList();
+
+    private boolean veggur = false;
+
     public PacmanBord() {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
     }
@@ -45,20 +48,41 @@ public class PacmanBord extends Pane {
         return fxPacman.getX() == 110;
     }
 
-   // public boolean athugaPacmanavegg(Veggtegund1 p, Veggtegund2 p2) {
-   //     if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
-   //         erAvegg = true;
-   //         if (erAvegg) {
-   //             fxPacman.xProperty().bind(p.getUppfaertYProperty());
-   //         } else {
-   //             erAvegg = false;
-   //             fxPacman.xProperty().unbind();
-   //         }
-   //     } else {
-    //         fxPacman.yProperty().unbind();
-   //         erAvegg = false;
-   //         fxPacman.setX((int)(fxPacman.getX() + 5));
-   //     }
-    //    return false;
-   // }
+    public boolean stopPacman() {
+        if (veggur) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void veggjaStopp(){
+        for (int i = 0; i < fxVeggtegund1.size()-1; i++) {
+            Veggtegund1 p=(Veggtegund1) fxVeggtegund1.get(i+1);
+            athugaPacmanaveggTegund1(p);
+        }
+        for (int i = 0; i < fxVeggtegund2.size()-1; i++) {
+            Veggtegund2 p=(Veggtegund2) fxVeggtegund2.get(i+1);
+            athugaPacmanaveggTegund2(p);
+        }
+    }
+
+
+    public boolean athugaPacmanaveggTegund1(Veggtegund1 p) {
+       if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+           veggur = true;
+           return true;
+       }
+       return false;
+    }
+
+    public boolean athugaPacmanaveggTegund2(Veggtegund2 p2) {
+        if (fxPacman.getBoundsInParent().intersects(p2.getBoundsInParent())) {
+            veggur = true;
+            return true;
+        }
+        return false;
+    }
+
+
 }

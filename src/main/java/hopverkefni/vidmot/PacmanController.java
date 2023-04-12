@@ -2,7 +2,10 @@ package hopverkefni.vidmot;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.KeyCode;
@@ -37,6 +40,7 @@ public class PacmanController {
     @FXML
     private final HashMap<KeyCode, Stefna> map=new HashMap<>();// Setur upp stefnu
 
+
     public void orvatakkar() {
         map.put(KeyCode.UP, UPP);
         map.put(KeyCode.DOWN, NIDUR);
@@ -61,6 +65,8 @@ public class PacmanController {
         }
     }
 
+
+
     public void hefjaLeik() {
         leikur = new Leikur();
         fxStig.textProperty().
@@ -69,6 +75,7 @@ public class PacmanController {
                 e -> {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
+                    fxPacmanBord.veggjaStopp();
                     if(fxPacmanBord.bordarmat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
@@ -77,6 +84,7 @@ public class PacmanController {
                         System.out.println("Plús 100");
                         leikur.haekkaStigin(100);
                     }
+
                 });
         t = new Timeline(k);
         t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
