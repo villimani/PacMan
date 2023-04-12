@@ -4,8 +4,8 @@ public enum Stefna {
 
     VINSTRI(180),
     HAEGRI(0),
-    UPP(90),
-    NIDUR(270);
+    UPP(270),
+    NIDUR(90);
 
     private final int gradur;
 

@@ -6,9 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<fx:root rotate="360" fill="$fxMatur" width="3" height="3" type="javafx.scene.shape.Rectangle" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root rotate="360" fill="$fxMatur" width="10" height="10" type="javafx.scene.shape.Rectangle" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
     <fx:define xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
-        <String fx:id="fxMatur" fx:value="GREEN" />
+        <String fx:id="fxMatur" fx:value="BLUE" />
         <Integer fx:id="OFFSET" fx:value="5" />
     </fx:define>
 </fx:root>

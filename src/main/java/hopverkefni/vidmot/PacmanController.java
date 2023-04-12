@@ -88,7 +88,7 @@ public class PacmanController {
 
 
     public void setStefna(int s) {
-        //PacmanBord.setStefna(s);
+        fxPacmanBord.setStefna(s);
     }
 
 }
