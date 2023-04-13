@@ -18,6 +18,8 @@ public class PacmanBord extends Pane {
 
     private ObservableList<Node> fxVeggtegund2 = FXCollections.observableArrayList();
 
+    private int life = 3;
+
     private boolean veggur = false;
 
     public PacmanBord() {
@@ -82,6 +84,17 @@ public class PacmanBord extends Pane {
             return true;
         }
         return false;
+    }
+
+    public boolean missaLif() {
+        if (fxPacman.getBoundsInParent().intersects(fxDraugur.getBoundsInParent())) {
+            System.out.println("missa lif");
+            life--;
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 

@@ -33,6 +33,8 @@ public class PacmanController {
     private Timeline t;
 
     private Leikur leikur;
+    @FXML
+    private Label fxLif;
 
     public static final int INTERVAL = 50;
 
@@ -71,11 +73,15 @@ public class PacmanController {
         leikur = new Leikur();
         fxStig.textProperty().
                 bind(leikur.stig().asString());
+        fxLif.textProperty().
+                bind(leikur.lives().asString());
+        leikur.setlivesProperty(3);
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
                     fxPacmanBord.veggjaStopp();
+                    fxPacmanBord.missaLif();
                     if(fxPacmanBord.bordarmat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
@@ -83,6 +89,9 @@ public class PacmanController {
                     if(fxPacmanBord.bordarfeitannmat()) {
                         System.out.println("Plús 100");
                         leikur.haekkaStigin(100);
+                    }
+                    if (fxPacmanBord.missaLif()){
+                        leikur.faekkaLif(-1);
                     }
 
                 });

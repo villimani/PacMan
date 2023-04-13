@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Byrjað að vinna að því að láta vegg stoppa leikmann">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Fegra allt adalvidmótið">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681342839465</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fegra allt adalvidmótið">
+      <created>1681344445063</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681344445063</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +183,7 @@
     <MESSAGE value="Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg" />
     <MESSAGE value="Lagaði stýriikerfiið á Pacman" />
     <MESSAGE value="Byrjað að vinna að því að láta vegg stoppa leikmann" />
-    <option name="LAST_COMMIT_MESSAGE" value="Byrjað að vinna að því að láta vegg stoppa leikmann" />
+    <MESSAGE value="Fegra allt adalvidmótið" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fegra allt adalvidmótið" />
   </component>
 </project>

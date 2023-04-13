@@ -11,6 +11,9 @@ public class Leikur {
 
     private IntegerProperty stiginProperty=new SimpleIntegerProperty();//stigin sem á að birta á leikborðinu
 
+    private IntegerProperty livesProperty=new SimpleIntegerProperty();//lífin sem á að birta á leikborðinu
+
+
     /**
      * leikurinn er búinn þannig upphafstilla stiginProperty
      */
@@ -24,11 +27,18 @@ public class Leikur {
         return stiginProperty;
     }
 
+    public  IntegerProperty lives(){
+        return livesProperty;
+    }
+
 
 
     public void setStiginProperty(int stiginProperty) {
         this.stiginProperty.set(stiginProperty);
     }
+
+    public void setlivesProperty(int lifProperty) {this.livesProperty.set(lifProperty);}
+
 
     /**
      * Hækkar stigin
@@ -36,5 +46,10 @@ public class Leikur {
     public void haekkaStigin(int fjoldistiga) {
         setStiginProperty(stiginProperty.get() + fjoldistiga);
     }
+
+    public void faekkaLif(int lif) {
+        setlivesProperty(livesProperty.get() + lif);
+    }
+
 
 }
