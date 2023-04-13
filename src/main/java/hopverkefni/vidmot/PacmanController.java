@@ -34,7 +34,7 @@ public class PacmanController {
 
     private Leikur leikur;
 
-    public static final int INTERVAL = 10;
+    public static final int INTERVAL = 50;
 
 
     @FXML

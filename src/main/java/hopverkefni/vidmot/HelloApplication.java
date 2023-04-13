@@ -16,7 +16,7 @@ public class HelloApplication extends Application {
         Parent root = loader.load();
         PacmanController sc = loader.getController();
         stage.setTitle(BOUNCE);
-        Scene s = new Scene(root, 400, 500);
+        Scene s = new Scene(root, 800, 600);
         stage.setScene(s);
         sc.orvatakkar();
         stage.show();

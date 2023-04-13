@@ -4,25 +4,57 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.PacmanController">
     <HBox>
-        <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="160" text="Tími:" />
-        <Label fx:id="timi" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="40" text="00.00" />
+        <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="160" text="Tími:">
+        <font>
+            <Font size="20.0" />
+        </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets left="110.0" />
+         </HBox.margin></Label>
+        <Label fx:id="timi" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="60" text="00.00">
+            <font>
+                <Font size="20.0" />
+            </font></Label>
+        <Label fx:id="Stigatafla" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="100" text="Stigataflan">
+            <font>
+                <Font size="20.0" />
+            </font>
+         <HBox.margin>
+            <Insets left="270.0" />
+         </HBox.margin></Label>
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord"/>
-            <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0" />
+            <PacmanBord fx:id="fxPacmanBord" maxHeight="440" maxWidth="600" />
+            <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets></ListView>
         </children>
     </HBox>
     <HBox>
-        <Label fx:id="fxStiglabel" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="30" text="Stig:" />
-        <Label fx:id="fxStig" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="400" text="0">
+        <Label fx:id="fxStiglabel" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="50" text="Stig:">
+        <font>
+            <Font size="20.0" />
+        </font></Label>
+        <Label fx:id="fxStig" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="300" text="0">
+            <font>
+                <Font size="20.0" />
+            </font>
             <padding>
                 <Insets right="200.0" />
             </padding></Label>
-        <Label fx:id="fxlives" alignment="CENTER" prefHeight="80" prefWidth="30" text="Líf" />
+        <Label fx:id="fxlives" alignment="CENTER" prefHeight="80" prefWidth="30" text="Líf:">
+        <font>
+            <Font size="20.0" />
+        </font></Label>
     </HBox>
 
 </VBox>
