@@ -11,6 +11,14 @@ public class Leikur {
 
     private IntegerProperty stiginProperty=new SimpleIntegerProperty();//stigin sem á að birta á leikborðinu
 
+    public int getLivesProperty() {
+        return livesProperty.get();
+    }
+
+    public IntegerProperty livesPropertyProperty() {
+        return livesProperty;
+    }
+
     private IntegerProperty livesProperty=new SimpleIntegerProperty();//lífin sem á að birta á leikborðinu
 
 

@@ -52,6 +52,8 @@
     <Veggtegund2 x="41" y="40"/>
     <Veggtegund2 x="41" y="60"/>
     <!-- Prufa fyrir mat -->
+    <Matur x="40" y="200"/>
+    <FeiturMatur x="40" y="200"/>
 
 
 </fx:root>

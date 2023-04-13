@@ -93,6 +93,10 @@ public class PacmanController {
                     if (fxPacmanBord.missaLif()){
                         leikur.faekkaLif(-1);
                     }
+                    if (leikur.getLivesProperty()==0){
+                        System.out.println("Game over");
+                       leikur.leiklokid();
+                    }
 
                 });
         t = new Timeline(k);
