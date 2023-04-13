@@ -9,7 +9,10 @@ public class Pacman extends ImageView {
 
     public void afram() {
         PacmanBord p = (PacmanBord) this.getParent();
-        if (getRotate()==180) {
+        if (p.stopPacman()){
+           int y = (int) (getY() + p.getWidth() * Math.cos(Math.toRadians(getRotate())));
+           int x = (int) (getX() + p.getWidth() * Math.sin(Math.toRadians(getRotate())));
+        } else if (getRotate()==180) {
             setX((int) (getX() + p.getWidth() + (int) Math.cos(Math.toRadians(getRotate())) * 10) % (int) p.getWidth());
         } else if (getRotate() == 90) {
             setY((int) (getY() + p.getHeight() + (int) Math.sin(Math.toRadians(getRotate())) * 10) % (int) p.getHeight());
@@ -18,5 +21,9 @@ public class Pacman extends ImageView {
         } else {
             setY((int) (getY() + p.getHeight() + (int) Math.sin(Math.toRadians(getRotate())) * 10) % (int) p.getHeight());
         }
+    }
+
+    public boolean etaMat(Matur f) {
+        return getBoundsInParent().intersects(f.getBoundsInParent());
     }
 }

@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class PacmanApplication extends Application {
     public static final String BOUNCE = "Bouncing";
     @Override
     public void start(Stage stage) throws IOException {

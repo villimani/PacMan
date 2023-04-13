@@ -18,6 +18,8 @@ public class PacmanBord extends Pane {
 
     private ObservableList<Node> fxVeggtegund2 = FXCollections.observableArrayList();
 
+    private final ObservableList<Matur> matur = FXCollections.observableArrayList();
+
     private boolean veggur = false;
 
     public PacmanBord() {
@@ -41,15 +43,10 @@ public class PacmanBord extends Pane {
         fxDraugur.setRotate(0);
     }
 
-    public boolean bordarmat() {
-        return fxPacman.getX() == 100;
-    }
-    public boolean bordarfeitannmat() {
-        return fxPacman.getX() == 110;
-    }
+
 
     public boolean stopPacman() {
-        if (veggur) {
+        if (missaLif()) {
             return true;
         } else {
             return false;
@@ -62,8 +59,8 @@ public class PacmanBord extends Pane {
             athugaPacmanaveggTegund1(p);
         }
         for (int i = 0; i < fxVeggtegund2.size()-1; i++) {
-            Veggtegund2 p=(Veggtegund2) fxVeggtegund2.get(i+1);
-            athugaPacmanaveggTegund2(p);
+            Veggtegund2 p2=(Veggtegund2) fxVeggtegund2.get(i+1);
+            athugaPacmanaveggTegund2(p2);
         }
     }
 
@@ -92,6 +89,28 @@ public class PacmanBord extends Pane {
         else {
             return false;
         }
+    }
+
+    public boolean bordarmat() {
+        for (Matur f : matur) {
+            if (fxPacman.etaMat(f)) {
+                getChildren().remove(f);
+                matur.remove(f);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean bordarfeitannmat() {
+        for (Matur f : matur) {
+            if (fxPacman.etaMat(f)) {
+                getChildren().remove(f);
+                matur.remove(f);
+                return true;
+            }
+        }
+        return false;
     }
 
 
