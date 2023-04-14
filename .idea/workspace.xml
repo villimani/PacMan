@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="búið að laga það að missa  lífin">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="smávægilegar breytingar varla neitt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/matur-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,63 +124,7 @@
       <option name="project" value="LOCAL" />
       <updated>1681239922015</updated>
     </task>
-    <task id="LOCAL-00011" summary="Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg">
-      <created>1681241563893</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681241563894</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Lagaði stýriikerfiið á Pacman">
-      <created>1681341017487</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1681341017487</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Byrjað að vinna að því að láta vegg stoppa leikmann">
-      <created>1681342839465</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1681342839465</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Fegra allt adalvidmótið">
-      <created>1681344445063</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1681344445063</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Leikmaður missir líif ef hannn rekst á draug">
-      <created>1681376186535</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1681376186535</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Leikmaður missir líif ef hannn rekst á draug">
-      <created>1681377040768</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1681377040768</updated>
-    </task>
-    <task id="LOCAL-00017" summary="man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á">
-      <created>1681423386161</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1681423386161</updated>
-    </task>
-    <task id="LOCAL-00018" summary="búið að laga það að missa  lífin">
-      <created>1681476773497</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1681476773497</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,13 +150,6 @@
     <MESSAGE value="Pacman og draugur hreyfast báðir" />
     <MESSAGE value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
     <MESSAGE value="smávægilegar breytingar varla neitt" />
-    <MESSAGE value="Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg" />
-    <MESSAGE value="Lagaði stýriikerfiið á Pacman" />
-    <MESSAGE value="Byrjað að vinna að því að láta vegg stoppa leikmann" />
-    <MESSAGE value="Fegra allt adalvidmótið" />
-    <MESSAGE value="Leikmaður missir líif ef hannn rekst á draug" />
-    <MESSAGE value="man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á" />
-    <MESSAGE value="búið að laga það að missa  lífin" />
-    <option name="LAST_COMMIT_MESSAGE" value="búið að laga það að missa  lífin" />
+    <option name="LAST_COMMIT_MESSAGE" value="smávægilegar breytingar varla neitt" />
   </component>
 </project>

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import hopverkefni.vidmot.*?>
 
-<?import hopverkefni.vidmot.Pacman?>
-<?import hopverkefni.vidmot.Draugur?>
-<?import hopverkefni.vidmot.Veggtegund1?>
-<?import hopverkefni.vidmot.Veggtegund2?>
-<?import hopverkefni.vidmot.Matur?>
-<?import hopverkefni.vidmot.FeiturMatur?>
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Pacman fx:id="fxPacman" x="300" y="300"/>
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
