@@ -1,0 +1,111 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f1f64261-627c-418e-90e7-9861e871a147\" name=\"Changes\" comment=\"matur kominn inn á borð\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"FxmlFile\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2Ndu76ZDW5WjGkZTrkVQhoxvkeV\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;/Users/vilmundurmani/Desktop/PacMan&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f1f64261-627c-418e-90e7-9861e871a147\" name=\"Changes\" comment=\"\" />\r\n      <created>1680006112628</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1680006112628</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fyrsta commit með adal view\">\r\n      <created>1680006751854</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680006751854</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Setja inn PacManBord og laga aðal view þannig að virki\">\r\n      <created>1680007289728</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680007289728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Refactora nafn í adal-view\">\r\n      <created>1680007414297</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680007414297</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Setja inn myndir af hlutunum\">\r\n      <created>1680007773345</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680007773345</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka\">\r\n      <created>1680008886043</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680008886043</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"setja upp menu\">\r\n      <created>1680181930381</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1680181930381</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Byrjaður að reyna að láta pacman hreyfast\">\r\n      <created>1681155217329</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681155217329</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Pacman og draugur hreyfast báðir\">\r\n      <created>1681161502676</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681161502676</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Byrjað að búa til mat og aðlaga stigakerfið að honum\">\r\n      <created>1681239394291</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681239394291</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"smávægilegar breytingar varla neitt\">\r\n      <created>1681239922015</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681239922015</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg\">\r\n      <created>1681241563893</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681241563894</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Lagaði stýriikerfiið á Pacman\">\r\n      <created>1681341017487</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681341017487</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Byrjað að vinna að því að láta vegg stoppa leikmann\">\r\n      <created>1681342839465</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681342839465</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Fegra allt adalvidmótið\">\r\n      <created>1681344445063</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681344445063</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"Leikmaður missir líif ef hannn rekst á draug\">\r\n      <created>1681376186535</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681376186535</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"Leikmaður missir líif ef hannn rekst á draug\">\r\n      <created>1681377040768</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681377040768</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á\">\r\n      <created>1681423386161</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681423386161</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"búið að laga það að missa  lífin\">\r\n      <created>1681476773497</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681476773497</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"matur kominn inn á borð\">\r\n      <created>1681480204564</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681480204564</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"20\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Fyrsta commit með adal view\" />\r\n    <MESSAGE value=\"Setja inn PacManBord og laga aðal view þannig að virki\" />\r\n    <MESSAGE value=\"Refactora nafn í adal-view\" />\r\n    <MESSAGE value=\"Setja inn myndir af hlutunum\" />\r\n    <MESSAGE value=\"Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka\" />\r\n    <MESSAGE value=\"setja upp menu\" />\r\n    <MESSAGE value=\"Byrjaður að reyna að láta pacman hreyfast\" />\r\n    <MESSAGE value=\"Pacman og draugur hreyfast báðir\" />\r\n    <MESSAGE value=\"Byrjað að búa til mat og aðlaga stigakerfið að honum\" />\r\n    <MESSAGE value=\"smávægilegar breytingar varla neitt\" />\r\n    <MESSAGE value=\"Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg\" />\r\n    <MESSAGE value=\"Lagaði stýriikerfiið á Pacman\" />\r\n    <MESSAGE value=\"Byrjað að vinna að því að láta vegg stoppa leikmann\" />\r\n    <MESSAGE value=\"Fegra allt adalvidmótið\" />\r\n    <MESSAGE value=\"Leikmaður missir líif ef hannn rekst á draug\" />\r\n    <MESSAGE value=\"man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á\" />\r\n    <MESSAGE value=\"búið að laga það að missa  lífin\" />\r\n    <MESSAGE value=\"matur kominn inn á borð\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"matur kominn inn á borð\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 0deca317203068d0cb25f8627409d123e666db60)
++++ b/.idea/workspace.xml	(date 1681493885193)
+@@ -4,9 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="matur kominn inn á borð">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
++    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="smávægilegar breytingar varla neitt">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -123,70 +122,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1681239922015</updated>
+     </task>
+-    <task id="LOCAL-00011" summary="Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg">
+-      <created>1681241563893</created>
+-      <option name="number" value="00011" />
+-      <option name="presentableId" value="LOCAL-00011" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681241563894</updated>
+-    </task>
+-    <task id="LOCAL-00012" summary="Lagaði stýriikerfiið á Pacman">
+-      <created>1681341017487</created>
+-      <option name="number" value="00012" />
+-      <option name="presentableId" value="LOCAL-00012" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681341017487</updated>
+-    </task>
+-    <task id="LOCAL-00013" summary="Byrjað að vinna að því að láta vegg stoppa leikmann">
+-      <created>1681342839465</created>
+-      <option name="number" value="00013" />
+-      <option name="presentableId" value="LOCAL-00013" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681342839465</updated>
+-    </task>
+-    <task id="LOCAL-00014" summary="Fegra allt adalvidmótið">
+-      <created>1681344445063</created>
+-      <option name="number" value="00014" />
+-      <option name="presentableId" value="LOCAL-00014" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681344445063</updated>
+-    </task>
+-    <task id="LOCAL-00015" summary="Leikmaður missir líif ef hannn rekst á draug">
+-      <created>1681376186535</created>
+-      <option name="number" value="00015" />
+-      <option name="presentableId" value="LOCAL-00015" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681376186535</updated>
+-    </task>
+-    <task id="LOCAL-00016" summary="Leikmaður missir líif ef hannn rekst á draug">
+-      <created>1681377040768</created>
+-      <option name="number" value="00016" />
+-      <option name="presentableId" value="LOCAL-00016" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681377040768</updated>
+-    </task>
+-    <task id="LOCAL-00017" summary="man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á">
+-      <created>1681423386161</created>
+-      <option name="number" value="00017" />
+-      <option name="presentableId" value="LOCAL-00017" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681423386161</updated>
+-    </task>
+-    <task id="LOCAL-00018" summary="búið að laga það að missa  lífin">
+-      <created>1681476773497</created>
+-      <option name="number" value="00018" />
+-      <option name="presentableId" value="LOCAL-00018" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681476773497</updated>
+-    </task>
+-    <task id="LOCAL-00019" summary="matur kominn inn á borð">
+-      <created>1681480204564</created>
+-      <option name="number" value="00019" />
+-      <option name="presentableId" value="LOCAL-00019" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1681480204564</updated>
+-    </task>
+-    <option name="localTasksCounter" value="20" />
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -212,14 +148,6 @@
+     <MESSAGE value="Pacman og draugur hreyfast báðir" />
+     <MESSAGE value="Byrjað að búa til mat og aðlaga stigakerfið að honum" />
+     <MESSAGE value="smávægilegar breytingar varla neitt" />
+-    <MESSAGE value="Bætti inn feiitum mat og byrjaðii í pælingum til þess að stoppa pacman þegar fer á vegg" />
+-    <MESSAGE value="Lagaði stýriikerfiið á Pacman" />
+-    <MESSAGE value="Byrjað að vinna að því að láta vegg stoppa leikmann" />
+-    <MESSAGE value="Fegra allt adalvidmótið" />
+-    <MESSAGE value="Leikmaður missir líif ef hannn rekst á draug" />
+-    <MESSAGE value="man ekki alveg hverju bætti held stoppa pacman og draug ef rekast á" />
+-    <MESSAGE value="búið að laga það að missa  lífin" />
+-    <MESSAGE value="matur kominn inn á borð" />
+-    <option name="LAST_COMMIT_MESSAGE" value="matur kominn inn á borð" />
++    <option name="LAST_COMMIT_MESSAGE" value="smávægilegar breytingar varla neitt" />
+   </component>
+ </project>
+\ No newline at end of file
