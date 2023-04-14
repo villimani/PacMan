@@ -6,6 +6,14 @@
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Pacman fx:id="fxPacman" x="300" y="300"/>
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
+    <Matur y="50" x="200"/>
+    <Matur y="50" x="220"/>
+    <Matur y="50" x="240"/>
+    <Matur y="50" x="260"/>
+    <FeiturMatur y="100" x="300"/>
+    <FeiturMatur y="100" x="320"/>
+    <FeiturMatur y="100" x="340"/>
+    <FeiturMatur y="100" x="360"/>
     <!-- Þak -->
     <Veggtegund1 x="1" y="1"/>
     <Veggtegund1 x="100" y="1"/>
@@ -42,9 +50,6 @@
     <Veggtegund1 x="41" y="40"/>
     <Veggtegund2 x="41" y="40"/>
     <Veggtegund2 x="41" y="60"/>
-    <!-- Prufa fyrir mat -->
-    <Matur y="50" x="200"/>
-    <FeiturMatur y="100" x="300"/>
 
 
 

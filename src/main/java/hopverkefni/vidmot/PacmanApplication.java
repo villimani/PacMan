@@ -9,13 +9,13 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class PacmanApplication extends Application {
-    public static final String BOUNCE = "Bouncing";
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("adal-view.fxml"));
         Parent root = loader.load();
         PacmanController sc = loader.getController();
-        stage.setTitle(BOUNCE);
+        stage.setTitle("Pacman");
         Scene s = new Scene(root, 800, 600);
         stage.setScene(s);
         sc.orvatakkar();

@@ -80,14 +80,14 @@ public class PacmanController {
         leikur.setlivesProperty(3);
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
+                    fxPacmanBord.veggjaStopp();
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
-                    //fxPacmanBord.veggjaStopp();
-                    if(fxPacmanBord.bordarmat()) {
+                    if(fxPacmanBord.bordaMat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
                     }
-                    if(fxPacmanBord.bordarfeitannmat()) {
+                    if(fxPacmanBord.bordaFeitanMat()) {
                         System.out.println("Plús 100");
                         leikur.haekkaStigin(100);
                     }

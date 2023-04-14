@@ -5,6 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Rectangle;
 
 public class PacmanBord extends Pane {
 
@@ -13,19 +14,27 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
+    private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
 
-    private ObservableList<Node> fxVeggtegund1 = FXCollections.observableArrayList();
-
-    private ObservableList<Node> fxVeggtegund2 = FXCollections.observableArrayList();
+    private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
     private final ObservableList<Matur> matur = FXCollections.observableArrayList();
 
-    private boolean veggur = false;
+    private final ObservableList<FeiturMatur> feiturMatur = FXCollections.observableArrayList();
 
     public PacmanBord() {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
-        fxVeggtegund1=getChildren();
-        fxVeggtegund2=getChildren();
+        fxVeggir = getChildren();
+
+        // Stilla lista með matnum
+        for (int i = 2; i < 6; i++) {
+            matur.add((Matur) fxVeggir.get(i));
+        }
+
+        // Stilla lista með feita matnum
+        for (int i = 6; i < 10; i++) {
+            feiturMatur.add((FeiturMatur) fxVeggir.get(i));
+        }
     }
 
     public void afram() {
@@ -45,16 +54,38 @@ public class PacmanBord extends Pane {
         fxDraugur.setRotate(0);
     }
 
-
-
-    public void veggjaStopp(){
-        for (int i = 0; i < fxVeggtegund1.size()-1; i++) {
-            Veggtegund1 p=(Veggtegund1) fxVeggtegund1.get(i+1);
-            athugaPacmanaveggTegund1(p);
+    // Fara í gegnum venjulegu stigin
+    public boolean bordaMat() {
+        if(!matur.isEmpty()) {
+            for (Matur m : matur) {
+                System.out.print(m);
+                return athugaMat(m);
+            }
         }
-        for (int i = 0; i < fxVeggtegund2.size()-1; i++) {
-            Veggtegund2 p2=(Veggtegund2) fxVeggtegund2.get(i+1);
-            athugaPacmanaveggTegund2(p2);
+        return false;
+    }
+
+    // Fara í gegnum alla feitu matana.
+    public boolean bordaFeitanMat() {
+        if (!feiturMatur.isEmpty()) {
+            for (FeiturMatur f : feiturMatur) {
+                return athugaFeitanMat(f);
+            }
+        }
+        return false;
+    }
+
+    // Kíkir hvort að leikmaður klessti á vegg
+    public void veggjaStopp(){
+        for (int i = 10; i < fxVeggir.size()-1; i++) {
+            Rectangle p = (Rectangle) fxVeggir.get(i);
+            if (p.getWidth() > 99) {
+                Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
+                athugaVeggtegund1(v);
+            } else {
+                Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
+                athugaVeggtegund2(v);
+            }
         }
     }
 
@@ -63,23 +94,49 @@ public class PacmanBord extends Pane {
         nyrDraugur();
     }
 
-
-    public boolean athugaPacmanaveggTegund1(Veggtegund1 p) {
-       if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
-           veggur = true;
-           System.out.println("veggur");
-       }
-       veggur = false;
-       return veggur;
+    // Kíkja hvort að leikmaður snerti feitan mat
+    public boolean athugaFeitanMat(FeiturMatur f) {
+        if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+            System.out.print("FEITUR MATUR ");
+            getChildren().remove(f);
+            feiturMatur.remove(f);
+            return true;
+        }
+        return false;
     }
 
-    public boolean athugaPacmanaveggTegund2(Veggtegund2 p2) {
-        if (fxPacman.getBoundsInParent().intersects(p2.getBoundsInParent())) {
-            veggur = true;
-            System.out.println("veggur");
+    // Kíkja hvort að leikmaður snerti venjulegan mat
+    public boolean athugaMat(Matur f) {
+        if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+            System.out.print("VENJULEGUR MATUR ");
+            getChildren().remove(f);
+            matur.remove(f);
+            return true;
         }
-        veggur = false;
-        return veggur;
+        return false;
+    }
+
+    public void athugaVeggtegund1(Veggtegund1 p) {
+       if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+           erAVegg = true;
+           if (erAVegg && fxPacman.getY() < p.getY()) {
+               fxPacman.yProperty().bind(p.getUppfaertYUppi());
+           }
+           if (erAVegg && fxPacman.getY() > p.getY()) {
+               System.out.print("niðri ");
+               fxPacman.yProperty().bind(p.getUppfaertYUndir());
+           } else {
+               erAVegg = false;
+               fxPacman.yProperty().unbind();
+           }
+       } else {
+           fxPacman.yProperty().unbind();
+           erAVegg = false;
+       }
+    }
+
+    public void athugaVeggtegund2(Veggtegund2 p) {
+
     }
 
     public boolean missaLif() {
