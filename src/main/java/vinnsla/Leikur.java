@@ -29,6 +29,10 @@ public class Leikur {
         stiginProperty.set(0);
     }
 
+    public void missirlif() {
+        setlivesProperty(getLivesProperty()-1);
+    }
+
 
 
     public  IntegerProperty stig(){
@@ -55,9 +59,6 @@ public class Leikur {
         setStiginProperty(stiginProperty.get() + fjoldistiga);
     }
 
-    public void faekkaLif(int lif) {
-        setlivesProperty(livesProperty.get() + lif);
-    }
 
 
 }

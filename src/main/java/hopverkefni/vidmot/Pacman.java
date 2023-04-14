@@ -10,8 +10,8 @@ public class Pacman extends ImageView {
     public void afram() {
         PacmanBord p = (PacmanBord) this.getParent();
         if (p.stopPacman()){
-           int y = (int) (getY() + p.getWidth() * Math.cos(Math.toRadians(getRotate())));
-           int x = (int) (getX() + p.getWidth() * Math.sin(Math.toRadians(getRotate())));
+          setY(50.0);
+          setX(60.0);
         } else if (getRotate()==180) {
             setX((int) (getX() + p.getWidth() + (int) Math.cos(Math.toRadians(getRotate())) * 10) % (int) p.getWidth());
         } else if (getRotate() == 90) {

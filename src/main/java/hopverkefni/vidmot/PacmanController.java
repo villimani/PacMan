@@ -36,6 +36,8 @@ public class PacmanController {
     @FXML
     private Label fxLif;
 
+    private int lif=3;
+
     public static final int INTERVAL = 50;
 
 
@@ -91,7 +93,8 @@ public class PacmanController {
                         leikur.haekkaStigin(100);
                     }
                     if (fxPacmanBord.missaLif()){
-                        leikur.faekkaLif(-1);
+                        forADraug();
+
                     }
                     if (leikur.getLivesProperty()==0){
                         System.out.println("Game over");
@@ -102,6 +105,10 @@ public class PacmanController {
         t = new Timeline(k);
         t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
         t.play();
+    }
+
+    public void forADraug() {
+        leikur.missirlif();
     }
 
 
