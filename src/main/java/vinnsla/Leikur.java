@@ -2,8 +2,12 @@ package vinnsla;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Leikur {
+
+    private final ObservableList<Integer> stigatafla = FXCollections.observableArrayList();
 
     public IntegerProperty stiginPropertyProperty() {
         return stiginProperty;
@@ -27,6 +31,7 @@ public class Leikur {
      */
     public  void leiklokid() {
         stiginProperty.set(0);
+        stigatafla.add(stiginProperty.get());
     }
 
     public void missirlif() {
@@ -60,5 +65,9 @@ public class Leikur {
     }
 
 
+
+    public ObservableList<Integer> getStigin() {
+        return stigatafla;
+    }
 
 }

@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="bjo til hjörtuborð en setti pac mynd inn í staðin">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HjortuBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HjortuBord.java" afterDir="false" />
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Lífin virka núna eins og þau eiga að virka">
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/hjortun.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/hjortun.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681482082270</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Lífin virka núna eins og þau eiga að virka">
+      <created>1681492020740</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1681492020740</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,6 +242,7 @@
     <MESSAGE value="búið að laga það að missa  lífin" />
     <MESSAGE value="matur kominn inn á borð" />
     <MESSAGE value="bjo til hjörtuborð en setti pac mynd inn í staðin" />
-    <option name="LAST_COMMIT_MESSAGE" value="bjo til hjörtuborð en setti pac mynd inn í staðin" />
+    <MESSAGE value="Lífin virka núna eins og þau eiga að virka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lífin virka núna eins og þau eiga að virka" />
   </component>
 </project>

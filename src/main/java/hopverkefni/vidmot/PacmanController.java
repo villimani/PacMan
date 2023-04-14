@@ -44,6 +44,11 @@ public class PacmanController {
     private final HashMap<KeyCode, Stefna> map=new HashMap<>();// Setur upp stefnu
 
 
+    public void initialize() {
+        leikur = new Leikur();      // búa til vinnsluna
+        fxStigin.setItems(leikur.getStigin());  // setja upp listann
+        fxStigin.setFocusTraversable(false);    // ekki hægt að focus-a á listann
+    }
     public void orvatakkar() {
         map.put(KeyCode.UP, UPP);
         map.put(KeyCode.DOWN, NIDUR);
@@ -70,7 +75,6 @@ public class PacmanController {
 
 
     public void hefjaLeik() {
-        leikur = new Leikur();
         fxStig.textProperty().
                 bind(leikur.stig().asString());
         leikur.setlivesProperty(3);
