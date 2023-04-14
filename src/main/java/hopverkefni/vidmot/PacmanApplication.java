@@ -21,6 +21,7 @@ public class PacmanApplication extends Application {
         sc.orvatakkar();
         stage.show();
         sc.hefjaLeik();
+
     }
 
     public static void main(String[] args) {
