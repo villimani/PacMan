@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Lífin virka núna eins og þau eiga að virka">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Búinn að búa til stigatöfluna">
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
     </list>
@@ -207,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681492020740</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Búinn að búa til stigatöfluna">
+      <created>1681492698051</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1681492698051</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,6 +250,7 @@
     <MESSAGE value="matur kominn inn á borð" />
     <MESSAGE value="bjo til hjörtuborð en setti pac mynd inn í staðin" />
     <MESSAGE value="Lífin virka núna eins og þau eiga að virka" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lífin virka núna eins og þau eiga að virka" />
+    <MESSAGE value="Búinn að búa til stigatöfluna" />
+    <option name="LAST_COMMIT_MESSAGE" value="Búinn að búa til stigatöfluna" />
   </component>
 </project>

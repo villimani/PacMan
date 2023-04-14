@@ -92,14 +92,12 @@ public class PacmanController {
                         leikur.haekkaStigin(100);
                     }
                     if (fxPacmanBord.missaLif()){
+                        if (leikur.getLivesProperty()-1==0){
+                            stoppaleik();
+                        }
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
-                    if (leikur.getLivesProperty()==0){
-                        System.out.println("Game over");
-                       leikur.leiklokid();
-                    }
-
                 });
         t = new Timeline(k);
         t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
@@ -111,8 +109,10 @@ public class PacmanController {
         fxPacmanBord.endurstilla();
     }
 
-
-
+    public void stoppaleik() {
+        t.stop();
+        leikur.leiklokid();
+    }
 
 
     public void setStefna(int s) {

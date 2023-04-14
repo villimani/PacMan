@@ -29,9 +29,9 @@ public class Leikur {
     /**
      * leikurinn er búinn þannig upphafstilla stiginProperty
      */
-    public  void leiklokid() {
-        stiginProperty.set(0);
+    public void leiklokid() {
         stigatafla.add(stiginProperty.get());
+        stiginProperty.set(0);
     }
 
     public void missirlif() {
