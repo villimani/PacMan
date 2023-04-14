@@ -14,6 +14,10 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
+    public boolean bordadilitill = false;
+
+    private PacmanController sc;
+
     private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
 
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
@@ -56,22 +60,29 @@ public class PacmanBord extends Pane {
 
     // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
-        if(!matur.isEmpty()) {
-            for (Matur m : matur) {
-                System.out.print(m);
-                return athugaMat(m);
+        for (Matur f : matur) {
+            System.out.println("borda");
+            if (athugaMat(f)) {
+                getChildren().remove(f);
+                matur.remove(f);
+                return true;
             }
         }
+        System.out.println("KKKIborda");
         return false;
     }
 
     // Fara í gegnum alla feitu matana.
     public boolean bordaFeitanMat() {
-        if (!feiturMatur.isEmpty()) {
-            for (FeiturMatur f : feiturMatur) {
-                return athugaFeitanMat(f);
+        for (FeiturMatur f : feiturMatur) {
+            System.out.println("borda");
+            if (athugaFeitanMat(f)) {
+                getChildren().remove(f);
+                matur.remove(f);
+                return true;
             }
         }
+        System.out.println("KKKIborda");
         return false;
     }
 
@@ -97,9 +108,7 @@ public class PacmanBord extends Pane {
     // Kíkja hvort að leikmaður snerti feitan mat
     public boolean athugaFeitanMat(FeiturMatur f) {
         if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
-            System.out.print("FEITUR MATUR ");
-            getChildren().remove(f);
-            feiturMatur.remove(f);
+            System.out.print("FVENJULEGUR MATUR ");
             return true;
         }
         return false;
@@ -109,8 +118,6 @@ public class PacmanBord extends Pane {
     public boolean athugaMat(Matur f) {
         if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
             System.out.print("VENJULEGUR MATUR ");
-            getChildren().remove(f);
-            matur.remove(f);
             return true;
         }
         return false;

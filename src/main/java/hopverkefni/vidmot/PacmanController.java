@@ -32,6 +32,10 @@ public class PacmanController {
 
     private Timeline t;
 
+    public Leikur getLeikur() {
+        return leikur;
+    }
+
     private Leikur leikur;
 
 
@@ -84,12 +88,11 @@ public class PacmanController {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
                     if(fxPacmanBord.bordaMat()) {
-                        System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
                     }
                     if(fxPacmanBord.bordaFeitanMat()) {
-                        System.out.println("Plús 100");
                         leikur.haekkaStigin(100);
+                        System.out.println("BOrdaf");
                     }
                     if (fxPacmanBord.missaLif()){
                         if (leikur.getLivesProperty()-1==0){
