@@ -27,7 +27,5 @@ public class Pacman extends ImageView {
     }
 
 
-    public boolean etaMat(Matur f) {
-        return getBoundsInParent().intersects(f.getBoundsInParent());
-    }
+
 }

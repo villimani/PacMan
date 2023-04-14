@@ -94,7 +94,7 @@ public class PacmanBord extends Pane {
 
     public boolean bordarmat() {
         for (Matur f : matur) {
-            if (fxPacman.etaMat(f)) {
+            if (etaMat(f)) {
                 getChildren().remove(f);
                 matur.remove(f);
                 return true;
@@ -103,9 +103,17 @@ public class PacmanBord extends Pane {
         return false;
     }
 
+    public boolean etaMat(Matur f) {
+        if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+            System.out.println("eta mat");
+            return true;
+        }
+        return false;
+    }
+
     public boolean bordarfeitannmat() {
         for (Matur f : matur) {
-            if (fxPacman.etaMat(f)) {
+            if (etaMat(f)) {
                 getChildren().remove(f);
                 matur.remove(f);
                 return true;
