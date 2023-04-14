@@ -64,6 +64,11 @@ public class PacmanBord extends Pane {
         }
     }
 
+    public void endurstilla(){
+        nyrPac();
+        nyrDraugur();
+    }
+
 
     public boolean athugaPacmanaveggTegund1(Veggtegund1 p) {
        if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
@@ -114,4 +119,21 @@ public class PacmanBord extends Pane {
     }
 
 
+    public Pacman nyrPac() {
+        if (fxPacman != null)
+            getChildren().remove(fxPacman);
+        fxPacman = new Pacman();
+        getChildren().add(fxPacman);
+        fxPacman.stillumPacman();
+        return fxPacman;
+    }
+
+    public Draugur nyrDraugur() {
+        if (fxDraugur != null)
+            getChildren().remove(fxDraugur);
+        fxDraugur = new Draugur();
+        getChildren().add(fxDraugur);
+        fxDraugur.stillumDraug();
+        return fxDraugur;
+    }
 }

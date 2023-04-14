@@ -70,7 +70,6 @@ public class PacmanController {
     }
 
 
-
     public void hefjaLeik() {
         leikur = new Leikur();
         fxStig.textProperty().
@@ -83,7 +82,6 @@ public class PacmanController {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
                     fxPacmanBord.veggjaStopp();
-                    fxPacmanBord.missaLif();
                     if(fxPacmanBord.bordarmat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
@@ -109,6 +107,7 @@ public class PacmanController {
 
     public void forADraug() {
         leikur.missirlif();
+        fxPacmanBord.endurstilla();
     }
 
 
