@@ -40,6 +40,7 @@
         </children>
     </HBox>
     <HBox>
+        <children>
         <Label fx:id="fxStiglabel" alignment="BASELINE_CENTER" prefHeight="80" prefWidth="50" text="Stig:">
         <font>
             <Font size="20.0" />
@@ -55,13 +56,16 @@
         <font>
             <Font size="20.0" />
         </font></Label>
-        <Label fx:id="fxLif" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="300" text="0">
+        <Label fx:id="fxLif" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="20" text="0">
             <font>
                 <Font size="20.0" />
             </font>
             <padding>
                 <Insets right="200.0" />
             </padding></Label>
+
+        <HjortuBord fx:id="fxHjortuBord" maxHeight="30" maxWidth="100" />
+        </children>
     </HBox>
 
 </VBox>

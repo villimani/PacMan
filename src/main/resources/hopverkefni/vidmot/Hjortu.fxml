@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<fx:root fitHeight="30.0" fitWidth="28.0" type="javafx.scene.image.ImageView" xmlns=" http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <Image preserveRatio="true" requestedHeight="30" url="@líf.png"/>
+    <viewport>
+        <Rectangle2D/>
+    </viewport>
+</fx:root>
