@@ -78,7 +78,7 @@ public class PacmanBord extends Pane {
             System.out.println("borda");
             if (athugaFeitanMat(f)) {
                 getChildren().remove(f);
-                matur.remove(f);
+                feiturMatur.remove(f);
                 return true;
             }
         }
