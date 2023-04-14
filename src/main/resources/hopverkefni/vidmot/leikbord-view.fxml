@@ -4,7 +4,6 @@
 <?import hopverkefni.vidmot.*?>
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <Pacman fx:id="fxPacman" x="300" y="300"/>
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
     <Matur y="50" x="200"/>
     <Matur y="50" x="220"/>
@@ -50,6 +49,7 @@
     <Veggtegund1 x="41" y="40"/>
     <Veggtegund2 x="41" y="40"/>
     <Veggtegund2 x="41" y="60"/>
+    <Pacman fx:id="fxPacman" x="300" y="300"/>
 
 
 
