@@ -11,7 +11,7 @@
 <?import hopverkefni.vidmot.*?>
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <Pacman y="1" x="1"/>
-    <Pacman y="1" x="30"/>
-    <Pacman y="1" x="60"/>
+    <Hjortu fx:id="hjarta1" y="1" x="1"/>
+    <Hjortu fx:id="hjarta2" y="1" x="30"/>
+    <Hjortu fx:id="hjarta3" y="1" x="60"/>
 </fx:root>

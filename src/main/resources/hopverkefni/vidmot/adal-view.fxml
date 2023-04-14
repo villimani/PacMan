@@ -56,15 +56,10 @@
         <font>
             <Font size="20.0" />
         </font></Label>
-        <Label fx:id="fxLif" alignment="CENTER_LEFT" graphicTextGap="0.0" prefHeight="80" prefWidth="20" text="0">
-            <font>
-                <Font size="20.0" />
-            </font>
-            <padding>
-                <Insets right="200.0" />
-            </padding></Label>
-
-        <HjortuBord fx:id="fxHjortuBord" maxHeight="30" maxWidth="100" />
+        <HjortuBord fx:id="fxHjortuBord" maxHeight="30" maxWidth="100">
+            <HBox.margin>
+               <Insets left="7.0" top="25.0" />
+            </HBox.margin></HjortuBord>
         </children>
     </HBox>
 

@@ -33,10 +33,9 @@ public class PacmanController {
     private Timeline t;
 
     private Leikur leikur;
-    @FXML
-    private Label fxLif;
 
-    private int lif=3;
+
+    public HjortuBord fxHjortuBord;
 
     public static final int INTERVAL = 50;
 
@@ -74,8 +73,6 @@ public class PacmanController {
         leikur = new Leikur();
         fxStig.textProperty().
                 bind(leikur.stig().asString());
-        fxLif.textProperty().
-                bind(leikur.lives().asString());
         leikur.setlivesProperty(3);
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
@@ -92,6 +89,7 @@ public class PacmanController {
                     }
                     if (fxPacmanBord.missaLif()){
                         forADraug();
+                        fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
                     if (leikur.getLivesProperty()==0){
                         System.out.println("Game over");
