@@ -81,7 +81,7 @@ public class PacmanController {
                 e -> {
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
-                    fxPacmanBord.veggjaStopp();
+                    //fxPacmanBord.veggjaStopp();
                     if(fxPacmanBord.bordarmat()) {
                         System.out.println("Plús 10");
                         leikur.haekkaStigin(10);
@@ -92,7 +92,6 @@ public class PacmanController {
                     }
                     if (fxPacmanBord.missaLif()){
                         forADraug();
-
                     }
                     if (leikur.getLivesProperty()==0){
                         System.out.println("Game over");

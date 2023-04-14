@@ -43,6 +43,8 @@
     <Veggtegund2 x="41" y="40"/>
     <Veggtegund2 x="41" y="60"/>
     <!-- Prufa fyrir mat -->
+    <Matur y="50" x="200"/>
+    <FeiturMatur y="100" x="300"/>
 
 
 

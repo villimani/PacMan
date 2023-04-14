@@ -24,6 +24,8 @@ public class PacmanBord extends Pane {
 
     public PacmanBord() {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
+        fxVeggtegund1=getChildren();
+        fxVeggtegund2=getChildren();
     }
 
     public void afram() {
@@ -45,14 +47,6 @@ public class PacmanBord extends Pane {
 
 
 
-    public boolean stopPacman() {
-        if (missaLif()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     public void veggjaStopp(){
         for (int i = 0; i < fxVeggtegund1.size()-1; i++) {
             Veggtegund1 p=(Veggtegund1) fxVeggtegund1.get(i+1);
@@ -73,17 +67,19 @@ public class PacmanBord extends Pane {
     public boolean athugaPacmanaveggTegund1(Veggtegund1 p) {
        if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
            veggur = true;
-           return true;
+           System.out.println("veggur");
        }
-       return false;
+       veggur = false;
+       return veggur;
     }
 
     public boolean athugaPacmanaveggTegund2(Veggtegund2 p2) {
         if (fxPacman.getBoundsInParent().intersects(p2.getBoundsInParent())) {
             veggur = true;
-            return true;
+            System.out.println("veggur");
         }
-        return false;
+        veggur = false;
+        return veggur;
     }
 
     public boolean missaLif() {
