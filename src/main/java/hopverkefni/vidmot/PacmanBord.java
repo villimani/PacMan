@@ -49,12 +49,12 @@ public class PacmanBord extends Pane {
         fxPacman.setRotate(upp);
     }
 
-    public void aframDraugar(){
+    public void aframDraugar() {
         fxDraugur.afram();
         draugastefna();
     }
 
-    public void draugastefna(){
+    public void draugastefna() {
         fxDraugur.setRotate(0);
     }
 
@@ -87,8 +87,8 @@ public class PacmanBord extends Pane {
     }
 
     // Kíkir hvort að leikmaður klessti á vegg
-    public void veggjaStopp(){
-        for (int i = 9; i < fxVeggir.size()-2; i++) {
+    public void veggjaStopp() {
+        for (int i = 9; i < fxVeggir.size() - 2; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 99) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
@@ -100,14 +100,14 @@ public class PacmanBord extends Pane {
         }
     }
 
-    public void endurstilla(){
+    public void endurstilla() {
         nyrPac();
         nyrDraugur();
     }
 
     // Kíkja hvort að leikmaður snerti feitan mat
     public boolean athugaFeitanMat(FeiturMatur f) {
-        if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+        if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
             System.out.print("FVENJULEGUR MATUR ");
             return true;
         }
@@ -116,7 +116,7 @@ public class PacmanBord extends Pane {
 
     // Kíkja hvort að leikmaður snerti venjulegan mat
     public boolean athugaMat(Matur f) {
-        if(fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+        if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
             System.out.print("VENJULEGUR MATUR ");
             return true;
         }
@@ -124,27 +124,43 @@ public class PacmanBord extends Pane {
     }
 
     public void athugaVeggtegund1(Veggtegund1 p) {
-       if(fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
-           erAVegg = true;
-           if (erAVegg && fxPacman.getY() < p.getY()) {
-               fxPacman.yProperty().bind(p.getUppfaertYUppi());
-           }
-           if (erAVegg && fxPacman.getY() > p.getY()) {
-               System.out.print("niðri ");
-               fxPacman.yProperty().bind(p.getUppfaertYUndir());
-           } else {
-               erAVegg = false;
-               fxPacman.yProperty().unbind();
-           }
-       } else {
-           fxPacman.yProperty().unbind();
-           erAVegg = false;
-       }
+        if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVegg = true;
+            if (fxPacman.getY() < p.getY()) {
+                fxPacman.yProperty().bind(p.getUppfaertYUppi());
+            }
+            if (erAVegg && fxPacman.getY() > p.getY()) {
+                System.out.print("niðri ");
+                fxPacman.yProperty().bind(p.getUppfaertYUndir());
+            } else {
+                erAVegg = false;
+                fxPacman.yProperty().unbind();
+            }
+        }else {
+            fxPacman.yProperty().unbind();
+            erAVegg = false;
+        }
     }
 
     public void athugaVeggtegund2(Veggtegund2 p) {
-
+        if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVegg = true;
+            if (fxPacman.getY()> p.getY()) {
+                fxPacman.xProperty().bind(p.getUppfaertXUndir());
+            }
+            if (erAVegg && fxPacman.getY() < p.getY()) {
+                System.out.print("niðri ");
+                fxPacman.xProperty().bind(p.getUppfaertXUppi());
+            } else {
+                erAVegg = false;
+                fxPacman.xProperty().unbind();
+            }
+        }else {
+            fxPacman.xProperty().unbind();
+            erAVegg = false;
+        }
     }
+
 
     public boolean missaLif() {
         if (fxPacman.getBoundsInParent().intersects(fxDraugur.getBoundsInParent())) {

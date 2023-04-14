@@ -12,13 +12,13 @@ public class Veggtegund1 extends Rectangle {
     }
 
     public DoubleProperty getUppfaertYUppi(){
-        uppfaertYProperty.set(yProperty().get() - 39);
+        uppfaertYProperty.set(yProperty().get() +39);
         System.out.print("frá ofan ");
         return uppfaertYProperty;
     }
 
     public DoubleProperty getUppfaertYUndir(){
-        uppfaertYProperty.set(yProperty().get() + 60);
+        uppfaertYProperty.set(yProperty().get()-39);
         System.out.print("frá neðan ");
         return uppfaertYProperty;
     }
