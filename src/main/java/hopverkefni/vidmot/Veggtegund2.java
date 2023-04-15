@@ -13,12 +13,10 @@ public class Veggtegund2 extends Rectangle {
 
     public DoubleProperty getUppfaertXUppi(){
         uppfaertXProperty.set(xProperty().get() + 37);
-        System.out.print("frá ofan ");
         return uppfaertXProperty;
     }
     public DoubleProperty getUppfaertXUndir(){
         uppfaertXProperty.set(xProperty().get()-37);
-        System.out.print("frá neðan ");
         return uppfaertXProperty;
     }
 }

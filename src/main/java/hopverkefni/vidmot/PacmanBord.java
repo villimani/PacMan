@@ -31,6 +31,8 @@ public class PacmanBord extends Pane {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
         fxVeggir = getChildren();
 
+
+
         // Stilla lista með matnum
         for (int i = 1; i < 15; i++) {
             matur.add((Matur) fxVeggir.get(i));
@@ -60,6 +62,7 @@ public class PacmanBord extends Pane {
     }
 
 
+
     // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
         for (Matur f : matur) {
@@ -74,6 +77,8 @@ public class PacmanBord extends Pane {
         return false;
     }
 
+
+
     // Fara í gegnum alla feitu matana.
     public boolean bordaFeitanMat() {
         for (FeiturMatur f : feiturMatur) {
@@ -87,6 +92,7 @@ public class PacmanBord extends Pane {
         System.out.println("KKKIborda");
         return false;
     }
+
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {

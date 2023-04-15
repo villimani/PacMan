@@ -6,4 +6,5 @@ public class Matur extends Rectangle {
     public Matur() {
         FXML_Lestur.lesa(this, "matur-view.fxml");
     }
+
 }

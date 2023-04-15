@@ -26,7 +26,11 @@ public class PacmanController {
 
     public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 
+    public static final String VILTU_HALDA_AFRAMB = " : Viltu spila aftur?";
+
     public static final String PAC = "Þú ert búinn með lífin þín";
+
+    public static final String PACB = "Til hamingju þú vannst!";
     @FXML
     private ListView<String> fxStigin;
 
@@ -102,13 +106,13 @@ public class PacmanController {
                     if (fxPacmanBord.missaLif()){
                         if (leikur.getLivesProperty()-1==0){
                             stoppaleik();
-                            Platform.runLater(() -> synaAlert("Leikmaður"));
+                            Platform.runLater(() -> synaAlertA("Leikmaður"));
                         }
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
                     if (leikur.getStiginProperty()==540){
-                        Platform.runLater(() -> synaAlert("Leikmaður"));
+                        Platform.runLater(() -> synaAlertB("Leikmaður"));
                         stoppaleik();
                     }
                 });
@@ -117,8 +121,15 @@ public class PacmanController {
         t.play();
     }
 
-    private void synaAlert(String s) {
+    private void synaAlertA(String s) {
         Alert a = new AdvorunDialog("", PAC, s + VILTU_HALDA_AFRAM);
+        Optional<ButtonType> u = a.showAndWait();
+        if (u.isPresent() && !u.get().getButtonData().isCancelButton())
+            nyrLeikur();
+    }
+
+    private void synaAlertB(String s) {
+        Alert a = new AdvorunDialog("", PACB, s + VILTU_HALDA_AFRAMB);
         Optional<ButtonType> u = a.showAndWait();
         if (u.isPresent() && !u.get().getButtonData().isCancelButton())
             nyrLeikur();
