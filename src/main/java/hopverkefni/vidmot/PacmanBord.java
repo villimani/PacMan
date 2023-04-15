@@ -59,6 +59,7 @@ public class PacmanBord extends Pane {
         fxDraugur.setRotate(0);
     }
 
+
     // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
         for (Matur f : matur) {

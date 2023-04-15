@@ -24,9 +24,9 @@ import static vinnsla.Stefna.*;
 
 public class PacmanController {
 
-    public static final String VILTU_HALDA_AFRAM = ": Viltu halda áfram?";
+    public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 
-    public static final String PAC = ": Pacman";
+    public static final String PAC = "Þú ert búinn með lífin þín";
     @FXML
     private ListView<String> fxStigin;
 
@@ -102,7 +102,7 @@ public class PacmanController {
                     if (fxPacmanBord.missaLif()){
                         if (leikur.getLivesProperty()-1==0){
                             stoppaleik();
-                            Platform.runLater(() -> synaAlert("leikmaður"));
+                            Platform.runLater(() -> synaAlert("Leikmaður"));
                         }
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
