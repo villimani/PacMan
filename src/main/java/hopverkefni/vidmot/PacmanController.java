@@ -92,7 +92,6 @@ public class PacmanController {
                     }
                     if(fxPacmanBord.bordaFeitanMat()) {
                         leikur.haekkaStigin(100);
-                        System.out.println("BOrdaf");
                     }
                     if (fxPacmanBord.missaLif()){
                         if (leikur.getLivesProperty()-1==0){

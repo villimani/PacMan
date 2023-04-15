@@ -20,6 +20,7 @@ public class PacmanBord extends Pane {
 
     private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
 
+    private boolean erAVeggD = false;
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
     private final ObservableList<Matur> matur = FXCollections.observableArrayList();
@@ -93,9 +94,11 @@ public class PacmanBord extends Pane {
             if (p.getWidth() > 99) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
                 athugaVeggtegund1(v);
+                athugaVeggtegund1Draugur(v);
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2(v);
+                athugaVeggtegund2Draugur(v);
             }
         }
     }
@@ -142,13 +145,32 @@ public class PacmanBord extends Pane {
         }
     }
 
+    public void athugaVeggtegund1Draugur(Veggtegund1 p) {
+        if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
+            if (fxDraugur.getY() < p.getY()) {
+                fxDraugur.yProperty().bind(p.getUppfaertYUppi());
+            }
+            if (erAVeggD && fxDraugur.getY() > p.getY()) {
+                System.out.print("niðri ");
+                fxDraugur.yProperty().bind(p.getUppfaertYUndir());
+            } else {
+                erAVeggD = false;
+                fxDraugur.yProperty().unbind();
+            }
+        }else {
+            fxDraugur.yProperty().unbind();
+            erAVeggD = false;
+        }
+    }
+
     public void athugaVeggtegund2(Veggtegund2 p) {
         if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVegg = true;
             if (fxPacman.getY()> p.getY()) {
                 fxPacman.xProperty().bind(p.getUppfaertXUndir());
             }
-            if (erAVegg && fxPacman.getY() < p.getY()) {
+            if (erAVeggD && fxPacman.getY() < p.getY()) {
                 System.out.print("niðri ");
                 fxPacman.xProperty().bind(p.getUppfaertXUppi());
             } else {
@@ -158,6 +180,25 @@ public class PacmanBord extends Pane {
         }else {
             fxPacman.xProperty().unbind();
             erAVegg = false;
+        }
+    }
+
+    public void athugaVeggtegund2Draugur(Veggtegund2 p) {
+        if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
+            if (fxDraugur.getX() < p.getX()) {
+                fxDraugur.xProperty().bind(p.getUppfaertXUppi());
+            }
+            if (erAVegg && fxDraugur.getX() > p.getX()) {
+                System.out.print("niðri ");
+                fxDraugur.xProperty().bind(p.getUppfaertXUndir());
+            } else {
+                erAVeggD = false;
+                fxDraugur.xProperty().unbind();
+            }
+        }else {
+            fxDraugur.xProperty().unbind();
+            erAVeggD = false;
         }
     }
 
