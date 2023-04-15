@@ -22,7 +22,7 @@ public class PacmanController {
 
 
     @FXML
-    private ListView<Integer> fxStigin;
+    private ListView<String> fxStigin;
 
     @FXML
     private PacmanBord fxPacmanBord;
@@ -99,6 +99,9 @@ public class PacmanController {
                         }
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
+                    }
+                    if (leikur.getStiginProperty()==540){
+                        stoppaleik();
                     }
                 });
         t = new Timeline(k);

@@ -7,10 +7,16 @@ import javafx.collections.ObservableList;
 
 public class Leikur {
 
-    private final ObservableList<Integer> stigatafla = FXCollections.observableArrayList();
+    private final ObservableList<String> stigatafla = FXCollections.observableArrayList();
 
     public IntegerProperty stiginPropertyProperty() {
         return stiginProperty;
+    }
+
+    private int fjoldiTilrauna = 1;
+
+    public int getStiginProperty() {
+        return stiginProperty.get();
     }
 
     private IntegerProperty stiginProperty=new SimpleIntegerProperty();//stigin sem á að birta á leikborðinu
@@ -30,7 +36,8 @@ public class Leikur {
      * leikurinn er búinn þannig upphafstilla stiginProperty
      */
     public void leiklokid() {
-        stigatafla.add(stiginProperty.get());
+        stigatafla.add(+ fjoldiTilrauna +" Leikmaður "+ stiginProperty.get() + " ");
+        fjoldiTilrauna++;
         stiginProperty.set(0);
     }
 
@@ -66,7 +73,7 @@ public class Leikur {
 
 
 
-    public ObservableList<Integer> getStigin() {
+    public ObservableList<String> getStigin() {
         return stigatafla;
     }
 
