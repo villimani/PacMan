@@ -5,10 +5,20 @@
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
-    <Matur y="50" x="200"/>
-    <Matur y="50" x="220"/>
-    <Matur y="50" x="240"/>
-    <Matur y="50" x="260"/>
+    <Matur y="25" x="66"/>
+    <Matur y="25" x="100"/>
+    <Matur y="25" x="134"/>
+    <Matur y="25" x="168"/>
+    <Matur y="25" x="202"/>
+    <Matur y="25" x="236"/>
+    <Matur y="425" x="32"/>
+    <Matur y="425" x="66"/>
+    <Matur y="425" x="100"/>
+    <Matur y="425" x="134"/>
+    <Matur y="425" x="168"/>
+    <Matur y="425" x="202"/>
+    <Matur y="425" x="236"/>
+    <Matur y="25" x="32"/>
     <FeiturMatur y="100" x="300"/>
     <FeiturMatur y="100" x="320"/>
     <FeiturMatur y="100" x="340"/>
@@ -22,33 +32,48 @@
     <Veggtegund1 x="500" y="1"/>
 
     <!-- Gólf -->
-    <Veggtegund1 x="1" y="440"/>
-    <Veggtegund1 x="100" y="440"/>
-    <Veggtegund1 x="200" y="440"/>
-    <Veggtegund1 x="300" y="440"/>
-    <Veggtegund1 x="400" y="440"/>
-    <Veggtegund1 x="500" y="440"/>
+    <Veggtegund1 x="1" y="455"/>
+    <Veggtegund1 x="100" y="455"/>
+    <Veggtegund1 x="200" y="455"/>
+    <Veggtegund1 x="300" y="455"/>
+    <Veggtegund1 x="400" y="455"/>
+    <Veggtegund1 x="500" y="455"/>
 
     <!-- Vinstri veggur -->
     <Veggtegund2 x="1" y="1"/>
     <Veggtegund2 x="1" y="100"/>
-    <Veggtegund1 x="1" y="200"/>
-    <Veggtegund1 x="1" y="240"/>
-    <Veggtegund2 x="1" y="240"/>
-    <Veggtegund2 x="1" y="340"/>
+    <Veggtegund2 x="1" y="105"/>
+    <Veggtegund1 x="1" y="205"/>
+    <Veggtegund1 x="1" y="255"/>
+    <Veggtegund2 x="1" y="255"/>
+    <Veggtegund2 x="1" y="355"/>
 
     <!-- Hægri veggur -->
     <Veggtegund2 x="590" y="1"/>
     <Veggtegund2 x="590" y="100"/>
-    <Veggtegund1 x="500" y="200"/>
-    <Veggtegund1 x="500" y="240"/>
-    <Veggtegund2 x="590" y="240"/>
-    <Veggtegund2 x="590" y="340"/>
+    <Veggtegund2 x="590" y="105"/>
+    <Veggtegund1 x="500" y="205"/>
+    <Veggtegund1 x="500" y="255"/>
+    <Veggtegund2 x="590" y="255"/>
+    <Veggtegund2 x="590" y="355"/>
 
     <!-- Veggir í miðju -->
-    <Veggtegund1 x="41" y="40"/>
-    <Veggtegund2 x="41" y="40"/>
-    <Veggtegund2 x="41" y="60"/>
+    <Veggtegund1 x="55" y="55"/>
+    <Veggtegund2 x="55" y="55"/>
+    <Veggtegund2 x="55" y="65"/>
+    <Veggtegund1 x="435" y="55"/>
+    <Veggtegund2 x="535" y="55"/>
+    <Veggtegund2 x="535" y="65"/>
+    <Veggtegund1 x="435" y="400"/>
+    <Veggtegund2 x="535" y="300"/>
+    <Veggtegund2 x="535" y="310"/>
+    <Veggtegund1 x="55" y="400"/>
+    <Veggtegund2 x="55" y="300"/>
+    <Veggtegund2 x="55" y="310"/>
+    <Veggtegund1 x="290" y="55"/>
+    <Veggtegund1 x="200" y="55"/>
+    <Veggtegund1 x="290" y="400"/>
+    <Veggtegund1 x="200" y="400"/>
     <Pacman fx:id="fxPacman" x="300" y="300"/>
 
 

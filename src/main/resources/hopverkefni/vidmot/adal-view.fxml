@@ -32,7 +32,7 @@
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord" maxHeight="440" maxWidth="600" />
+            <PacmanBord fx:id="fxPacmanBord" maxHeight="455" maxWidth="600" />
             <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0">
             <opaqueInsets>
                <Insets />

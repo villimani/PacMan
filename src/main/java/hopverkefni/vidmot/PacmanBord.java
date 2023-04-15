@@ -32,12 +32,12 @@ public class PacmanBord extends Pane {
         fxVeggir = getChildren();
 
         // Stilla lista með matnum
-        for (int i = 1; i < 5; i++) {
+        for (int i = 1; i < 15; i++) {
             matur.add((Matur) fxVeggir.get(i));
         }
 
         // Stilla lista með feita matnum
-        for (int i = 5; i < 9; i++) {
+        for (int i = 15; i < 19; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
     }
@@ -89,7 +89,7 @@ public class PacmanBord extends Pane {
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {
-        for (int i = 9; i < fxVeggir.size() - 2; i++) {
+        for (int i = 20; i < fxVeggir.size() - 2; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 99) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
