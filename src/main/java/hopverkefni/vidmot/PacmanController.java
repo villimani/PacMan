@@ -2,10 +2,13 @@ package hopverkefni.vidmot;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.input.KeyCode;
@@ -15,12 +18,15 @@ import vinnsla.Leikur;
 import vinnsla.Stefna;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 import static vinnsla.Stefna.*;
 
 public class PacmanController {
 
+    public static final String VILTU_HALDA_AFRAM = ": Viltu halda áfram?";
 
+    public static final String PAC = ": Pacman";
     @FXML
     private ListView<String> fxStigin;
 
@@ -96,16 +102,32 @@ public class PacmanController {
                     if (fxPacmanBord.missaLif()){
                         if (leikur.getLivesProperty()-1==0){
                             stoppaleik();
+                            Platform.runLater(() -> synaAlert("leikmaður"));
                         }
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
                     if (leikur.getStiginProperty()==540){
+                        Platform.runLater(() -> synaAlert("Leikmaður"));
                         stoppaleik();
                     }
                 });
         t = new Timeline(k);
         t.setCycleCount(Timeline.INDEFINITE);   // leikurinn leikur endalaust
+        t.play();
+    }
+
+    private void synaAlert(String s) {
+        Alert a = new AdvorunDialog("", PAC, s + VILTU_HALDA_AFRAM);
+        Optional<ButtonType> u = a.showAndWait();
+        if (u.isPresent() && !u.get().getButtonData().isCancelButton())
+            nyrLeikur();
+    }
+
+    public void nyrLeikur() {
+        fxPacmanBord.nyrLeikur();
+        fxHjortuBord.nyrLeikur();
+        leikur.setlivesProperty(3);
         t.play();
     }
 

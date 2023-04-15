@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Byrjaður að vinna að borðinu meira">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Setja fullt á borð og laga stigatöfluna">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/AdvorunDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Hjortu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Hjortu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HjortuBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/HjortuBord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
     </list>
@@ -250,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681566025674</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Setja fullt á borð og laga stigatöfluna">
+      <created>1681566795821</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1681566795821</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,7 +277,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Setja inn PacManBord og laga aðal view þannig að virki" />
     <MESSAGE value="Refactora nafn í adal-view" />
     <MESSAGE value="Setja inn myndir af hlutunum" />
     <MESSAGE value="Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka" />
@@ -291,6 +301,7 @@
     <MESSAGE value="veggur 2 stoppar hægra megin" />
     <MESSAGE value="Eihv man ekki hvað" />
     <MESSAGE value="Byrjaður að vinna að borðinu meira" />
-    <option name="LAST_COMMIT_MESSAGE" value="Byrjaður að vinna að borðinu meira" />
+    <MESSAGE value="Setja fullt á borð og laga stigatöfluna" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setja fullt á borð og laga stigatöfluna" />
   </component>
 </project>

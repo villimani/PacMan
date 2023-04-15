@@ -202,6 +202,11 @@ public class PacmanBord extends Pane {
         }
     }
 
+    public void nyrLeikur() {
+        fxPacman = nyrPac();
+        fxDraugur = nyrDraugur();
+    }
+
 
     public boolean missaLif() {
         if (fxPacman.getBoundsInParent().intersects(fxDraugur.getBoundsInParent())) {

@@ -41,6 +41,8 @@ public class Leikur {
         stiginProperty.set(0);
     }
 
+
+
     public void missirlif() {
         setlivesProperty(getLivesProperty()-1);
     }
