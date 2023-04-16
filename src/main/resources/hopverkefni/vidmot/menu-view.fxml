@@ -6,7 +6,7 @@
 <?import javafx.scene.text.*?>
 
 <VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.MenuController">
-    <Label fx:id="nafn" alignment="CENTER" prefWidth="600" text="PACMAN" textAlignment="CENTER" textFill="#ddd718" >
+    <Label fx:id="Nafnid" alignment="CENTER" prefWidth="600" text="PACMAN" textAlignment="CENTER" textFill="#ddd718" >
          <font>
             <Font size="96.0" />
          </font>
@@ -17,16 +17,6 @@
          <VBox.margin>
             <Insets left="250.0" top="20.0" />
          </VBox.margin></Button>
-    <HBox>
-        <Label text="Leikmaður :" textAlignment="CENTER">
-            <padding>
-               <Insets left="200.0" right="20.0" top="5.0" />
-            </padding></Label>
-        <TextField />
-         <VBox.margin>
-            <Insets top="40.0" />
-         </VBox.margin>
-    </HBox>
 
 </VBox>
 

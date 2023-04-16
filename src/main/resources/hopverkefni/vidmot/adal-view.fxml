@@ -8,7 +8,18 @@
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hopverkefni.vidmot.PacmanController">
     <HBox>
-        <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="160" text="Tími:">
+        <Label prefHeight="80" text="Leikmaður :" textAlignment="CENTER">
+            <font>
+                <Font size="20.0" />
+            </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin></Label>
+        <TextField fx:id="fxnafn">
+         <HBox.margin>
+            <Insets left="5.0" top="18.0" />
+         </HBox.margin></TextField>
+        <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="100" text="Tími:">
         <font>
             <Font size="20.0" />
         </font>
@@ -16,25 +27,34 @@
             <Insets />
          </opaqueInsets>
          <HBox.margin>
-            <Insets left="110.0" />
+            <Insets />
          </HBox.margin></Label>
         <Label fx:id="timi" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="60" text="00.00">
             <font>
                 <Font size="20.0" />
             </font></Label>
-        <Button fx:id="fxstart" onAction="#fxbyrja" alignment="CENTER" prefHeight="20" prefWidth="50" text="PLAY"/>
+        <Button fx:id="fxstart" alignment="CENTER" onAction="#fxbyrja" prefHeight="20" prefWidth="100" text="PLAY">
+         <HBox.margin>
+            <Insets left="40.0" top="18.0" />
+         </HBox.margin></Button>
         <Label fx:id="Stigatafla" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="100" text="Stigataflan">
             <font>
                 <Font size="20.0" />
             </font>
          <HBox.margin>
-            <Insets left="270.0" />
+            <Insets left="30.0" />
          </HBox.margin></Label>
+        <VBox.margin>
+            <Insets top="40.0" />
+        </VBox.margin>
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord" maxHeight="455" maxWidth="600" />
-            <ListView fx:id="fxStigin" prefHeight="200.0" prefWidth="200.0">
+            <PacmanBord fx:id="fxPacmanBord" maxHeight="500" maxWidth="600">
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></PacmanBord>
+            <ListView fx:id="fxStigin" prefHeight="500.0" prefWidth="200.0">
             <opaqueInsets>
                <Insets />
             </opaqueInsets></ListView>
@@ -59,7 +79,7 @@
         </font></Label>
         <HjortuBord fx:id="fxHjortuBord" maxHeight="30" maxWidth="100">
             <HBox.margin>
-               <Insets left="7.0" top="25.0" />
+               <Insets left="7.0" top="9.0" />
             </HBox.margin></HjortuBord>
         </children>
     </HBox>

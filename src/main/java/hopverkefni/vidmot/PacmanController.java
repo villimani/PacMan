@@ -3,10 +3,7 @@ package hopverkefni.vidmot;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -23,6 +20,9 @@ public class PacmanController {
     @FXML
     private Button fxstart;
 
+    @FXML
+    private TextField fxnafn;
+
     public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 
     public static final String VILTU_HALDA_AFRAMB = " : Viltu spila aftur?";
@@ -32,6 +32,7 @@ public class PacmanController {
     public static final String PACB = "Til hamingju þú vannst!";
     @FXML
     private ListView<String> fxStigin;
+
 
     @FXML
     private PacmanBord fxPacmanBord;
@@ -49,6 +50,8 @@ public class PacmanController {
 
 
     public HjortuBord fxHjortuBord;
+
+
 
     public static final int INTERVAL = 50;
 
@@ -99,6 +102,7 @@ public class PacmanController {
                 bind(leikur.stig().asString());
         fxHjortuBord.nyrLeikur();
         leikur.setlivesProperty(3);
+        leikur.setnafnProperty(fxnafn.getText());
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
                     fxPacmanBord.veggjaStopp();
@@ -157,5 +161,9 @@ public class PacmanController {
     public void setStefna(int s ) {
         fxPacmanBord.setStefna(s);
     }
+
+
+
+
 
 }

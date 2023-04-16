@@ -2,6 +2,8 @@ package vinnsla;
 
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -21,8 +23,22 @@ public class Leikur {
 
     private IntegerProperty stiginProperty=new SimpleIntegerProperty();//stigin sem á að birta á leikborðinu
 
+    public String getNafnProperty() {
+        return nafnProperty.get();
+    }
+
+    public StringProperty nafnPropertyProperty() {
+        return nafnProperty;
+    }
+
+    private StringProperty nafnProperty=new SimpleStringProperty();//nafn sem á að birta á leikborðinu
+
     public int getLivesProperty() {
         return livesProperty.get();
+    }
+
+    public void setnafnProperty(String nafn) {
+        nafnProperty.set(nafn);
     }
 
     public IntegerProperty livesPropertyProperty() {
@@ -36,7 +52,7 @@ public class Leikur {
      * leikurinn er búinn þannig upphafstilla stiginProperty
      */
     public void leiklokid() {
-        stigatafla.add(+ fjoldiTilrauna +" Leikmaður "+ stiginProperty.get() + " ");
+        stigatafla.add(+ fjoldiTilrauna +" " + getNafnProperty() + " "+ stiginProperty.get() + " ");
         fjoldiTilrauna++;
         stiginProperty.set(0);
     }
