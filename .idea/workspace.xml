@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Lífin endurstillast þeegar maður setur leikinn í gang">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="bua til jlink">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/AdvorunDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/AdvorunDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681581796924</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="bua til jlink">
+      <created>1681649090780</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1681649090781</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +306,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Setja inn myndir af hlutunum" />
     <MESSAGE value="Setja inn draug og pacman á pacmanbord ps.eihv villa þannig að virkar ekki en ætti að virka" />
     <MESSAGE value="setja upp menu" />
     <MESSAGE value="Byrjaður að reyna að láta pacman hreyfast" />
@@ -318,6 +330,7 @@
     <MESSAGE value="Byrjaður að vinna að borðinu meira" />
     <MESSAGE value="Setja fullt á borð og laga stigatöfluna" />
     <MESSAGE value="Lífin endurstillast þeegar maður setur leikinn í gang" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lífin endurstillast þeegar maður setur leikinn í gang" />
+    <MESSAGE value="bua til jlink" />
+    <option name="LAST_COMMIT_MESSAGE" value="bua til jlink" />
   </component>
 </project>

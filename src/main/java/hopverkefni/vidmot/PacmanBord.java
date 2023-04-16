@@ -244,16 +244,6 @@ public class PacmanBord extends Pane {
         return false;
     }
 
-    public boolean bordarfeitannmat() {
-        for (Matur f : matur) {
-            if (etaMat(f)) {
-                getChildren().remove(f);
-                matur.remove(f);
-                return true;
-            }
-        }
-        return false;
-    }
 
 
     public Pacman nyrPac() {

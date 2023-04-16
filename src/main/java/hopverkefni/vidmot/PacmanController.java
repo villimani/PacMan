@@ -7,10 +7,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.util.Duration;
@@ -23,6 +20,8 @@ import java.util.Optional;
 import static vinnsla.Stefna.*;
 
 public class PacmanController {
+    @FXML
+    private Button fxstart;
 
     public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 
@@ -87,10 +86,18 @@ public class PacmanController {
         }
     }
 
+    public void skiptaIMenu() {
+        ViewSwitcher.switchTo(View.MENU);
+    }
 
+    public void fxbyrja() {
+        orvatakkar();
+        hefjaLeik();
+    }
     public void hefjaLeik() {
         fxStig.textProperty().
                 bind(leikur.stig().asString());
+        fxHjortuBord.nyrLeikur();
         leikur.setlivesProperty(3);
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
@@ -125,22 +132,16 @@ public class PacmanController {
         Alert a = new AdvorunDialog("", PAC, s + VILTU_HALDA_AFRAM);
         Optional<ButtonType> u = a.showAndWait();
         if (u.isPresent() && !u.get().getButtonData().isCancelButton())
-            nyrLeikur();
+            ViewSwitcher.switchTo(View.MENU);
     }
 
     private void synaAlertB(String s) {
         Alert a = new AdvorunDialog("", PACB, s + VILTU_HALDA_AFRAMB);
         Optional<ButtonType> u = a.showAndWait();
         if (u.isPresent() && !u.get().getButtonData().isCancelButton())
-            nyrLeikur();
+            ViewSwitcher.switchTo(View.MENU);
     }
 
-    public void nyrLeikur() {
-        fxPacmanBord.nyrLeikur();
-        fxHjortuBord.nyrLeikur();
-        leikur.setlivesProperty(3);
-        t.play();
-    }
 
     public void forADraug() {
         leikur.missirlif();
@@ -153,7 +154,7 @@ public class PacmanController {
     }
 
 
-    public void setStefna(int s) {
+    public void setStefna(int s ) {
         fxPacmanBord.setStefna(s);
     }
 
