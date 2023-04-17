@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import hopverkefni.vidmot.Matur?>
+<Pane fx:id="fxmatargeymsla" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <Matur y="25" x="66"/>
+    <Matur y="25" x="100"/>
+    <Matur y="25" x="134"/>
+    <Matur y="25" x="168"/>
+    <Matur y="25" x="202"/>
+    <Matur y="25" x="236"/>
+    <Matur y="425" x="32"/>
+    <Matur y="425" x="66"/>
+    <Matur y="425" x="100"/>
+    <Matur y="425" x="134"/>
+    <Matur y="425" x="168"/>
+    <Matur y="425" x="202"/>
+    <Matur y="425" x="236"/>
+    <Matur y="25" x="32"/>
+</Pane>

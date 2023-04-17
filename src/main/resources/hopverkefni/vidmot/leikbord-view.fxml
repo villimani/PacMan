@@ -5,20 +5,7 @@
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
-    <Matur y="25" x="66"/>
-    <Matur y="25" x="100"/>
-    <Matur y="25" x="134"/>
-    <Matur y="25" x="168"/>
-    <Matur y="25" x="202"/>
-    <Matur y="25" x="236"/>
-    <Matur y="425" x="32"/>
-    <Matur y="425" x="66"/>
-    <Matur y="425" x="100"/>
-    <Matur y="425" x="134"/>
-    <Matur y="425" x="168"/>
-    <Matur y="425" x="202"/>
-    <Matur y="425" x="236"/>
-    <Matur y="25" x="32"/>
+    <fx:include  source="Matur.fxml" />
     <FeiturMatur y="100" x="300"/>
     <FeiturMatur y="100" x="320"/>
     <FeiturMatur y="100" x="340"/>

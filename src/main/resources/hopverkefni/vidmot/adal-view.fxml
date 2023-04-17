@@ -15,7 +15,7 @@
          <HBox.margin>
             <Insets />
          </HBox.margin></Label>
-        <TextField fx:id="fxnafn"  editable="true" >
+        <TextField fx:id="fxnafn"  >
          <HBox.margin>
             <Insets left="5.0" top="18.0" />
          </HBox.margin></TextField>
@@ -50,7 +50,7 @@
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord" maxHeight="500" maxWidth="600">
+            <PacmanBord fx:id="fxPacmanBord" maxHeight="500" maxWidth="600" >
             <HBox.margin>
                <Insets />
             </HBox.margin></PacmanBord>

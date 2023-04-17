@@ -12,12 +12,12 @@ public class Veggtegund1 extends Rectangle {
     }
 
     public DoubleProperty getUppfaertYUppi(){
-        uppfaertYProperty.set(yProperty().get()-39);
+        uppfaertYProperty.set(yProperty().get() +39);
         return uppfaertYProperty;
     }
 
     public DoubleProperty getUppfaertYUndir(){
-        uppfaertYProperty.set(yProperty().get()+31);
+        uppfaertYProperty.set(yProperty().get()-39);
         return uppfaertYProperty;
     }
 

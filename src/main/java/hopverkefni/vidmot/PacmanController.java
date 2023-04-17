@@ -25,6 +25,7 @@ public class PacmanController {
     @FXML
     public TextField fxnafn;
 
+
     @FXML
     public Label fxtimi;
 
@@ -111,6 +112,7 @@ public class PacmanController {
                 e -> {
                     fxtimi.setText(fxtimi.getText()+1);
                     fxPacmanBord.veggjaStopp();
+                    fxPacmanBord.veggjaStoppD();
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
                     if(fxPacmanBord.bordaMat()) {

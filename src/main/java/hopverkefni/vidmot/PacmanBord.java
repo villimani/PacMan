@@ -3,6 +3,7 @@ package hopverkefni.vidmot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
@@ -21,6 +22,7 @@ public class PacmanBord extends Pane {
     private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
 
     private boolean erAVeggD = false;
+
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
     private final ObservableList<Matur> matur = FXCollections.observableArrayList();
@@ -32,14 +34,8 @@ public class PacmanBord extends Pane {
         fxVeggir = getChildren();
 
 
-
-        // Stilla lista með matnum
-        for (int i = 1; i < 15; i++) {
-            matur.add((Matur) fxVeggir.get(i));
-        }
-
         // Stilla lista með feita matnum
-        for (int i = 15; i < 19; i++) {
+        for (int i = 2; i <6; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
     }
@@ -77,6 +73,7 @@ public class PacmanBord extends Pane {
 
 
 
+
     // Fara í gegnum alla feitu matana.
     public boolean bordaFeitanMat() {
         for (FeiturMatur f : feiturMatur) {
@@ -92,15 +89,26 @@ public class PacmanBord extends Pane {
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {
-        for (int i = 20; i < fxVeggir.size() - 2; i++) {
+        for (int i = 6; i < fxVeggir.size() - 2; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
                 athugaVeggtegund1(v);
-                athugaVeggtegund1Draugur(v);
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2(v);
+            }
+        }
+    }
+
+    public void veggjaStoppD() {
+        for (int i= 6; i < fxVeggir.size() - 2; i++) {
+            Rectangle p = (Rectangle) fxVeggir.get(i);
+            if (p.getWidth() > 11) {
+                Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
+                athugaVeggtegund1Draugur(v);
+            } else {
+                Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2Draugur(v);
             }
         }
