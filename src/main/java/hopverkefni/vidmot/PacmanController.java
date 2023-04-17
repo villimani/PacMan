@@ -25,6 +25,9 @@ public class PacmanController {
     @FXML
     public TextField fxnafn;
 
+    @FXML
+    public Label fxtimi;
+
     public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 
     public static final String VILTU_HALDA_AFRAMB = " : Viltu spila aftur?";
@@ -106,6 +109,7 @@ public class PacmanController {
         leikur.setnafnProperty(fxnafn.getText());
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
+                    fxtimi.setText(fxtimi.getText()+1);
                     fxPacmanBord.veggjaStopp();
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
