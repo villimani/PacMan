@@ -82,14 +82,12 @@ public class PacmanBord extends Pane {
     // Fara í gegnum alla feitu matana.
     public boolean bordaFeitanMat() {
         for (FeiturMatur f : feiturMatur) {
-            System.out.println("borda");
             if (athugaFeitanMat(f)) {
                 getChildren().remove(f);
                 feiturMatur.remove(f);
                 return true;
             }
         }
-        System.out.println("KKKIborda");
         return false;
     }
 

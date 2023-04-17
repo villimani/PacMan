@@ -3,6 +3,8 @@ package hopverkefni.vidmot;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
@@ -89,14 +91,13 @@ public class PacmanController {
         }
     }
 
-    public void skiptaIMenu() {
-        ViewSwitcher.switchTo(View.MENU);
-    }
 
     public void fxbyrja() {
         orvatakkar();
         hefjaLeik();
     }
+
+
     public void hefjaLeik() {
         fxStig.textProperty().
                 bind(leikur.stig().asString());

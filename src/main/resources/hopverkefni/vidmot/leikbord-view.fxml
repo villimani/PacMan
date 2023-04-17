@@ -76,6 +76,4 @@
     <Veggtegund1 x="200" y="400"/>
     <Pacman fx:id="fxPacman" x="300" y="300"/>
 
-
-
 </fx:root>

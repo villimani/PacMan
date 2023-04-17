@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="man ikke">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vinnsla/Leikur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681664858995</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="man ikke">
+      <created>1681733015201</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1681733015201</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
