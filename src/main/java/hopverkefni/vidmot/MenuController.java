@@ -9,13 +9,6 @@ public class MenuController {
     @FXML
     private Button fxstart;
 
-
-    @FXML
-    private TextField fxnafn;
-
-
-    private String nafn = "nafn";
-
     private Leikur leikur;
 
 

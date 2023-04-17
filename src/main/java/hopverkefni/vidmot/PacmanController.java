@@ -21,7 +21,7 @@ public class PacmanController {
     private Button fxstart;
 
     @FXML
-    private TextField fxnafn;
+    public TextField fxnafn;
 
     public static final String VILTU_HALDA_AFRAM = " : Viltu reyna aftur?";
 

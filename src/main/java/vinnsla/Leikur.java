@@ -52,7 +52,7 @@ public class Leikur {
      * leikurinn er búinn þannig upphafstilla stiginProperty
      */
     public void leiklokid() {
-        stigatafla.add(+ fjoldiTilrauna +" " + getNafnProperty() + " "+ stiginProperty.get() + " ");
+        stigatafla.add(+ fjoldiTilrauna +".  " + getNafnProperty() + " :   "+ stiginProperty.get() + " stig ");
         fjoldiTilrauna++;
         stiginProperty.set(0);
     }

@@ -15,7 +15,7 @@
          <HBox.margin>
             <Insets />
          </HBox.margin></Label>
-        <TextField fx:id="fxnafn">
+        <TextField fx:id="fxnafn"  editable="true" >
          <HBox.margin>
             <Insets left="5.0" top="18.0" />
          </HBox.margin></TextField>
