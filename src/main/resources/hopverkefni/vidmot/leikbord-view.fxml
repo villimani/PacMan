@@ -5,7 +5,7 @@
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Draugur fx:id="fxDraugur" x="340" y="300"/>
-    <fx:include  source="Matur.fxml" />
+    <fx:include source="AllurMatur.fxml" fx:id="fxAllurmatur" />
     <FeiturMatur y="100" x="300"/>
     <FeiturMatur y="100" x="320"/>
     <FeiturMatur y="100" x="340"/>

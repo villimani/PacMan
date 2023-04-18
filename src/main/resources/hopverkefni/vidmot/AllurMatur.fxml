@@ -7,7 +7,8 @@
 <?import javafx.scene.layout.*?>
 
 <?import hopverkefni.vidmot.Matur?>
-<Pane fx:id="fxmatargeymsla" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<?import hopverkefni.vidmot.Allurmatur?>
+<Allurmatur  xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Matur y="25" x="66"/>
     <Matur y="25" x="100"/>
     <Matur y="25" x="134"/>
@@ -22,4 +23,4 @@
     <Matur y="425" x="202"/>
     <Matur y="425" x="236"/>
     <Matur y="25" x="32"/>
-</Pane>
+</Allurmatur>

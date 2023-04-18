@@ -7,18 +7,8 @@ import javafx.scene.layout.Pane;
 
 public class Allurmatur extends Pane {
 
-    private final ObservableList<Matur> matur = FXCollections.observableArrayList();
-
-    private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
-
     public Allurmatur() {
-        FXML_Lestur.lesa(this, "allurmatur.fxml");
-        fxVeggir = getChildren();
-        for (int i = 0; i < 14; i++) {
-            matur.add((Matur) fxVeggir.get(i));
+        FXML_Lestur.lesa(this, "leikbord-view.fxml");
         }
 
     }
-
-
-}

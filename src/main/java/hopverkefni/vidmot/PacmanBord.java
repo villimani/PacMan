@@ -15,6 +15,8 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
+    private Allurmatur fxAllurmatur;
+
     public boolean bordadilitill = false;
 
     private PacmanController sc;
@@ -25,7 +27,7 @@ public class PacmanBord extends Pane {
 
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
-    private final ObservableList<Matur> matur = FXCollections.observableArrayList();
+    private ObservableList<Node> matur = FXCollections.observableArrayList();
 
     private final ObservableList<FeiturMatur> feiturMatur = FXCollections.observableArrayList();
 
@@ -33,6 +35,7 @@ public class PacmanBord extends Pane {
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
         fxVeggir = getChildren();
 
+        matur = fxAllurmatur.getChildren();
 
         // Stilla lista með feita matnum
         for (int i = 2; i <6; i++) {
@@ -61,7 +64,7 @@ public class PacmanBord extends Pane {
 
     // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
-        for (Matur f : matur) {
+        for (Node f : matur) {
             if (athugaMat(f)) {
                 getChildren().remove(f);
                 matur.remove(f);
@@ -129,7 +132,7 @@ public class PacmanBord extends Pane {
     }
 
     // Kíkja hvort að leikmaður snerti venjulegan mat
-    public boolean athugaMat(Matur f) {
+    public boolean athugaMat(Node f) {
         if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
             System.out.print("VENJULEGUR MATUR ");
             return true;
@@ -230,16 +233,6 @@ public class PacmanBord extends Pane {
         }
     }
 
-    public boolean bordarmat() {
-        for (Matur f : matur) {
-            if (etaMat(f)) {
-                getChildren().remove(f);
-                matur.remove(f);
-                return true;
-            }
-        }
-        return false;
-    }
 
     public boolean etaMat(Matur f) {
         if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
