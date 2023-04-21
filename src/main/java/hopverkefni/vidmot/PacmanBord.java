@@ -17,6 +17,7 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
+
     @FXML
     private Allurmatur fxAllurmatur;
 
@@ -64,7 +65,7 @@ public class PacmanBord extends Pane {
         matur = fxAllurmatur.getChildren();
 
         // Stilla lista með feita matnum
-        for (int i = 3; i < 7; i++) {
+        for (int i = 3; i <7; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
         nyrkyss();
@@ -81,11 +82,15 @@ public class PacmanBord extends Pane {
 
     public void aframDraugar() {
         fxDraugur.afram();
+
+
     }
 
     public void draugastefna(int a) {
        fxDraugur.setRotate(a);
     }
+
+
 
     public void pacmanstefna(int a) {
         fxPacman.setRotate(a);
@@ -150,9 +155,11 @@ public class PacmanBord extends Pane {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
                 athugaVeggtegund1Draugur(v);
 
+
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2Draugur(v);
+
 
             }
         }
@@ -161,6 +168,7 @@ public class PacmanBord extends Pane {
     public void endurstilla() {
         nyrPac();
         nyrDraugur();
+
     }
 
     // Kíkja hvort að leikmaður snerti feitan mat
@@ -238,6 +246,10 @@ public class PacmanBord extends Pane {
 
 
 
+
+
+
+
     public void athugaVeggtegund2(Veggtegund2 p) {
         if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVegg = true;
@@ -281,6 +293,12 @@ public class PacmanBord extends Pane {
             erAVeggD = false;
         }
     }
+
+
+
+
+
+
 
 
 
@@ -332,4 +350,6 @@ public class PacmanBord extends Pane {
         fxDraugur.stillumDraug();
         return fxDraugur;
     }
+
+
 }
