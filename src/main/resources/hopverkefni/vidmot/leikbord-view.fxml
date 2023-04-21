@@ -5,6 +5,7 @@
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
     <Draugur fx:id="fxDraugur" x="285" y="220"/>
+    <Kyssuber fx:id="fxKyssuber" x="285" y="220"/>
     <fx:include source="AllurMatur.fxml" fx:id="fxAllurmatur" />
     <FeiturMatur y="100" x="500"/>
     <FeiturMatur y="100" x="100"/>
@@ -58,6 +59,5 @@
     <Veggtegund2 x="240" y="175"/>
     <Veggtegund2 x="350" y="175"/>
     <Pacman fx:id="fxPacman" x="285" y="424"/>
-    <Kyssuber fx:id="fxKyssuber" x="285" y="220"/>
 
 </fx:root>
