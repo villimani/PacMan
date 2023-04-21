@@ -23,6 +23,9 @@ public class PacmanBord extends Pane {
     @FXML
     private Pane fxGeymsla;
 
+    @FXML
+    private Kyssuber fxKyssuber;
+
     public boolean bordadilitill = false;
 
 
@@ -63,6 +66,7 @@ public class PacmanBord extends Pane {
         for (int i = 2; i <6; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
+        nyrkyss();
 
     }
 
@@ -115,10 +119,18 @@ public class PacmanBord extends Pane {
         return false;
     }
 
+    public boolean bordakyssuber() {
+        if (athugakyssuber()){
+            getChildren().remove(fxKyssuber);
+            return true;
+        }
+        return false;
+    }
+
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {
-        for (int i = 6; i < fxVeggir.size() - 2; i++) {
+        for (int i = 6; i < fxVeggir.size() - 3; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
@@ -166,6 +178,16 @@ public class PacmanBord extends Pane {
             return true;
         }
         return false;
+    }
+
+    public boolean athugakyssuber() {
+        if (fxPacman.getBoundsInParent().intersects(fxKyssuber.getBoundsInParent())) {
+            System.out.print("KYSSUBER ");
+
+            return true;
+        }
+        return false;
+
     }
 
     public void athugaVeggtegund1(Veggtegund1 p) {
@@ -305,6 +327,15 @@ public class PacmanBord extends Pane {
         getChildren().add(fxPacman);
         fxPacman.stillumPacman();
         return fxPacman;
+    }
+
+    public Kyssuber nyrkyss() {
+        if (fxKyssuber != null)
+            getChildren().remove(fxKyssuber);
+        fxKyssuber = new Kyssuber();
+        getChildren().add(fxKyssuber);
+        fxKyssuber.stillumKyssuber();
+        return fxKyssuber;
     }
 
     public Draugur nyrDraugur() {

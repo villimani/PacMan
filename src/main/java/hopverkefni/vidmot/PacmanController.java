@@ -116,6 +116,9 @@ public class PacmanController {
                     fxPacmanBord.veggjaStoppD();
                     fxPacmanBord.afram();
                     fxPacmanBord.aframDraugar();
+                    if (fxPacmanBord.bordakyssuber()){
+                        leikur.haekkaStigin(500);
+                    }
                     if(fxPacmanBord.bordaMat()) {
                         leikur.haekkaStigin(10);
                     }
