@@ -9,8 +9,8 @@ public class Kyssuber extends ImageView {
     }
 
     public void stillumKyssuber(){
-        setY(250);
-        setX(300);
+        setY(225);
+        setX(275);
 
     }
 }

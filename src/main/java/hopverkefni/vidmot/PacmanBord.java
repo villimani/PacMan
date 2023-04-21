@@ -224,11 +224,13 @@ public class PacmanBord extends Pane {
             erAVeggD = true;
             if (fxDraugur.getY() < p.getY()) {
                 draugastefna(270);
+                System.out.println("270");
                 fxDraugur.yProperty().bind(p.getUppfaertYUppi());
 
             }
             if (fxDraugur.getY() > p.getY()) {
                 draugastefna(90);
+                System.out.println("90");
                 fxDraugur.yProperty().bind(p.getUppfaertYUndir());
 
             } else {
@@ -274,13 +276,15 @@ public class PacmanBord extends Pane {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVeggD = true;
             if (fxDraugur.getX() > p.getX()) {
-                    draugastefna(180);
+                    draugastefna(0);
+                    System.out.println("180");
                 fxDraugur.xProperty().bind(p.getUppfaertXHaegri());
                 System.out.println("Draugastefna");
 
             }
             if (fxDraugur.getX() < p.getX()) {
-                    draugastefna(0);
+                    draugastefna(180);
+                    System.out.println("0");
                 System.out.print("niðri ");
                 fxDraugur.xProperty().bind(p.getUppfaertXVinstri());
 
