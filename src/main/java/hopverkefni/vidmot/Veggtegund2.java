@@ -13,12 +13,12 @@ public class Veggtegund2 extends Rectangle {
 
     // Hægra megin við vegg
     public DoubleProperty getUppfaertXHaegri(){
-        uppfaertXProperty.set(xProperty().get() + 40);
+        uppfaertXProperty.set(xProperty().get() + 20);
         return uppfaertXProperty;
     }
     // Vinstra megin við vegg
     public DoubleProperty getUppfaertXVinstri(){
-        uppfaertXProperty.set(xProperty().get() - 40);
+        uppfaertXProperty.set(xProperty().get() - 20);
         System.out.println();
         return uppfaertXProperty;
     }

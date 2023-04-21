@@ -111,7 +111,6 @@ public class PacmanController {
         leikur.setnafnProperty(fxnafn.getText());
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
-                    fxtimi.setText(fxtimi.getText()+1);
                     fxPacmanBord.veggjaStopp();
                     fxPacmanBord.veggjaStoppD();
                     fxPacmanBord.afram();

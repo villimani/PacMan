@@ -21,8 +21,8 @@ public class Pacman extends ImageView {
     }
 
     public void stillumPacman(){
-        setY(100);
-        setX(100);
+        setY(424);
+        setX(285);
     }
 
 

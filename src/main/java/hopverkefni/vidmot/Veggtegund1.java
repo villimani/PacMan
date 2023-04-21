@@ -13,7 +13,7 @@ public class Veggtegund1 extends Rectangle {
 
     // Ofan vegg
     public DoubleProperty getUppfaertYUppi(){
-        uppfaertYProperty.set(yProperty().get()-45);
+        uppfaertYProperty.set(yProperty().get()-28);
         return uppfaertYProperty;
     }
 

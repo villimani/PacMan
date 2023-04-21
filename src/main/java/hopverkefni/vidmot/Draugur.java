@@ -21,8 +21,8 @@ public class Draugur extends ImageView {
     }
 
     public void stillumDraug(){
-        setY(100);
-        setX(300);
+        setY(285);
+        setX(235);
     }
 
     public void skiptaUmAtt(){

@@ -15,27 +15,16 @@
          <HBox.margin>
             <Insets />
          </HBox.margin></Label>
-        <TextField fx:id="fxnafn"  >
+        <TextField fx:id="fxnafn">
          <HBox.margin>
-            <Insets left="5.0" top="18.0" />
-         </HBox.margin></TextField>
-        <Label fx:id="fxtimi" alignment="CENTER_RIGHT" prefHeight="80" prefWidth="100" text="Tími:">
-        <font>
-            <Font size="20.0" />
-        </font>
-         <opaqueInsets>
-            <Insets />
-         </opaqueInsets>
-         <HBox.margin>
-            <Insets />
-         </HBox.margin></Label>
-        <Label fx:id="timi" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="60" text="00.00">
-            <font>
-                <Font size="20.0" />
-            </font></Label>
+            <Insets bottom="15.0" left="5.0" top="18.0" />
+         </HBox.margin>
+         <padding>
+            <Insets bottom="5.0" />
+         </padding></TextField>
         <Button fx:id="fxstart" alignment="CENTER" onAction="#fxbyrja" prefHeight="20" prefWidth="100" text="PLAY">
          <HBox.margin>
-            <Insets left="40.0" top="18.0" />
+            <Insets left="250.0" top="18.0" />
          </HBox.margin></Button>
         <Label fx:id="Stigatafla" alignment="CENTER" graphicTextGap="0.0" prefHeight="80" prefWidth="100" text="Stigataflan">
             <font>
@@ -50,7 +39,7 @@
     </HBox>
     <HBox>
         <children>
-            <PacmanBord fx:id="fxPacmanBord" maxHeight="500" maxWidth="600" >
+            <PacmanBord fx:id="fxPacmanBord" maxHeight="500" maxWidth="600">
             <HBox.margin>
                <Insets />
             </HBox.margin></PacmanBord>

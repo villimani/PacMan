@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="Lagaði error þegar deyrð, lagaði veggi.">
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="lagaði">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Draugur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Pacman.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanBord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Veggtegund2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/adal-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -355,14 +360,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682094118151</updated>
     </task>
-    <task id="LOCAL-00043" summary="Lagaði error þegar deyrð, lagaði veggi.">
-      <created>1682097146409</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1682097146409</updated>
-    </task>
-    <option name="localTasksCounter" value="44" />
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -402,7 +400,7 @@
     <MESSAGE value="lol" />
     <MESSAGE value="reyndi að laga smá drauginn" />
     <MESSAGE value="bæta við mat" />
-    <MESSAGE value="Lagaði error þegar deyrð, lagaði veggi." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagaði error þegar deyrð, lagaði veggi." />
+    <MESSAGE value="lagaði" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagaði" />
   </component>
 </project>
