@@ -48,8 +48,9 @@ public class PacmanBord extends Pane {
         matur= fxAllurmatur.getChildren();
 
 
+        System.out.print(fxVeggir.size());
         // Stilla lista með feita matnum
-        for (int i = 2; i <6; i++) {
+        for (int i = 39; i < 43; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
     }
@@ -60,10 +61,10 @@ public class PacmanBord extends Pane {
         // lesa inn aftur upp á nýtt
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
         fxVeggir = getChildren();
-        matur= fxAllurmatur.getChildren();
+        matur = fxAllurmatur.getChildren();
 
         // Stilla lista með feita matnum
-        for (int i = 2; i <6; i++) {
+        for (int i = 39; i < 43; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
         nyrkyss();
@@ -130,7 +131,7 @@ public class PacmanBord extends Pane {
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {
-        for (int i = 6; i < fxVeggir.size() - 3; i++) {
+        for (int i = 0; i < fxVeggir.size() - 8; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
@@ -143,7 +144,7 @@ public class PacmanBord extends Pane {
     }
 
     public void veggjaStoppD() {
-        for (int i= 6; i < fxVeggir.size() - 3; i++) {
+        for (int i= 0; i < fxVeggir.size() - 8; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);

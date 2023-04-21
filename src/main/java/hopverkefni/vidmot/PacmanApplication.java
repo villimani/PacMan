@@ -17,7 +17,7 @@ public class PacmanApplication extends Application {
         ViewSwitcher.setScene(scene);
         ViewSwitcher.switchTo(View.MENU);
         ViewSwitcher.setScene(scene);
-        stage.setTitle("Panta Heim");
+        stage.setTitle("PacMan");
         stage.setScene(scene);
         stage.show();
     }
