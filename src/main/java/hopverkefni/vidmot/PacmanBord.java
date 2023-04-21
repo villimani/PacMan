@@ -135,12 +135,12 @@ public class PacmanBord extends Pane {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
-                athugaVeggtegund1Draugur(v);
-                athugaVeggtegund12Draugur(v);
+               athugaVeggtegund1Draugur(v);
+
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2Draugur(v);
-                athugaVeggtegund22Draugur(v);
+
             }
         }
     }
@@ -198,12 +198,21 @@ public class PacmanBord extends Pane {
                 fxDraugur.yProperty().bind(p.getUppfaertYUppi());
 
             }
+            if (fxDraugur.getY() > p.getY()) {
+                draugastefna(90);
+                fxDraugur.yProperty().bind(p.getUppfaertYUndir());
+
             } else {
                 erAVeggD = false;
                 fxDraugur.yProperty().unbind();
             }
-
+        } else {
+            erAVeggD = false;
+            fxDraugur.yProperty().unbind();
+        }
     }
+
+
 
     public void athugaVeggtegund12Draugur(Veggtegund1 p) {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
@@ -250,21 +259,18 @@ public class PacmanBord extends Pane {
                 System.out.println("Draugastefna");
 
             }
+            if (erAVegg && fxDraugur.getX() > p.getX()) {
+                draugastefna(270);
+                System.out.print("niðri ");
+                fxDraugur.xProperty().bind(p.getUppfaertXUndir());
+
+            } else {
+                erAVeggD = false;
+                fxDraugur.xProperty().unbind();
+            }
         }else {
             fxDraugur.xProperty().unbind();
             erAVeggD = false;
-        }
-    }
-
-    public void athugaVeggtegund22Draugur(Veggtegund2 p) {
-        if (erAVegg && fxDraugur.getX() > p.getX()) {
-            draugastefna(270);
-            System.out.print("niðri ");
-            fxDraugur.xProperty().bind(p.getUppfaertXUndir());
-
-        } else {
-            erAVeggD = false;
-            fxDraugur.xProperty().unbind();
         }
     }
 
