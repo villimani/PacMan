@@ -132,7 +132,7 @@ public class PacmanController {
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
-                    if (leikur.getStiginProperty()==1000){
+                    if (leikur.getStiginProperty()==1660){
                         Platform.runLater(() -> synaAlertB("Leikmaður"));
                         stoppaleik();
                     }
