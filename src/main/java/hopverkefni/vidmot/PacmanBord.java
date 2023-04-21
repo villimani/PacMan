@@ -131,7 +131,7 @@ public class PacmanBord extends Pane {
 
     // Kíkir hvort að leikmaður klessti á vegg
     public void veggjaStopp() {
-        for (int i = 6; i < fxVeggir.size() - 1; i++) {
+        for (int i = 6; i < fxVeggir.size() - 2; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
@@ -144,7 +144,7 @@ public class PacmanBord extends Pane {
     }
 
     public void veggjaStoppD() {
-        for (int i= 6; i < fxVeggir.size() - 1; i++) {
+        for (int i= 6; i < fxVeggir.size() - 2; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
