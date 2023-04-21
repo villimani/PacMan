@@ -3,6 +3,7 @@ package hopverkefni.vidmot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
@@ -17,14 +18,33 @@ public class PacmanBord extends Pane {
     private Draugur fxDraugur;
 
     @FXML
+    private Draugur fxDraugur2;
+
+
+
+
+    @FXML
     private Allurmatur fxAllurmatur;
+
+    @FXML
+    private Pane fxGeymsla;
 
     @FXML
     private Kyssuber fxKyssuber;
 
+    public boolean bordadilitill = false;
+
+
+
+    private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
+
+    private boolean erAVeggD = false;
+
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
     private ObservableList<Node> matur = FXCollections.observableArrayList();
+    private ObservableList<Node> maturGeymsla = FXCollections.observableArrayList();
+    private ObservableList<Kyssuber> kyssubers = FXCollections.observableArrayList();
     private final ObservableList<FeiturMatur> feiturMatur = FXCollections.observableArrayList();
 
     public PacmanBord() {
@@ -33,12 +53,15 @@ public class PacmanBord extends Pane {
         fxVeggir = getChildren();
         matur= fxAllurmatur.getChildren();
 
+
         System.out.print(fxVeggir.size());
 
         // Stilla lista með feita matnum
-        for (int i = 3; i < 7; i++) {
+        for (int i = 4; i < 8; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
+
+        draugastefna2(270);
     }
 
     /**
@@ -53,10 +76,10 @@ public class PacmanBord extends Pane {
         matur = fxAllurmatur.getChildren();
 
         // Stilla lista með feita matnum
-        for (int i = 3; i < 7; i++) {
+        for (int i = 4; i <8; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
-        nyrkyss();
+        fxKyssuber.relocate(275, 225);
 
     }
 
@@ -81,6 +104,9 @@ public class PacmanBord extends Pane {
      */
     public void aframDraugar() {
         fxDraugur.afram();
+        fxDraugur2.afram();
+
+
     }
 
     /**
@@ -92,9 +118,19 @@ public class PacmanBord extends Pane {
        fxDraugur.setRotate(a);
     }
 
-    /**
-     * Kíkir hvort að pacman snerti blátt stig og eyðir því þá af leikborði.
-     */
+    public void draugastefna2(int a) {
+        fxDraugur2.setRotate(a);
+    }
+
+
+
+    public void pacmanstefna(int a) {
+        fxPacman.setRotate(a);
+    }
+
+
+
+    // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
         for (Node f : matur) {
             if (athugaMat((Node) f)) {
@@ -125,7 +161,7 @@ public class PacmanBord extends Pane {
      */
     public boolean bordakyssuber() {
         if (athugakyssuber()){
-            getChildren().remove(fxKyssuber);
+            fxKyssuber.relocate(800,900);
             return true;
         }
         return false;
@@ -136,7 +172,7 @@ public class PacmanBord extends Pane {
      * Kíkir hvort að Pacman snertir veggtegund 1 (lárétt) eða veggtegund 2 (lóðrétt).
      */
     public void veggjaStopp() {
-        for (int i = 7; i < fxVeggir.size() - 3; i++) {
+        for (int i = 8; i < fxVeggir.size() - 3; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
@@ -152,15 +188,19 @@ public class PacmanBord extends Pane {
      * Kíkir hvort að draugur snerti veggtegund1 (lárétt) eða veggtegund2 (lóðrétt).
      */
     public void veggjaStoppD() {
-        for (int i= 7; i < fxVeggir.size() - 3; i++) {
+        for (int i= 8; i < fxVeggir.size() - 3; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
                 athugaVeggtegund1Draugur(v);
+                athugaVeggtegund1Draugur2(v);
+
 
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2Draugur(v);
+                athugaVeggtegund2Draugur2(v);
+
 
             }
         }
@@ -172,6 +212,8 @@ public class PacmanBord extends Pane {
     public void endurstilla() {
         nyrPac();
         nyrDraugur();
+        nyrDraugur2();
+
     }
 
     /**
@@ -214,6 +256,7 @@ public class PacmanBord extends Pane {
      */
     public void athugaVeggtegund1(Veggtegund1 p) {
         if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVegg = true;
             if (fxPacman.getY() < p.getY()) {
                 System.out.println("uppi " + fxPacman.getY());
                 fxPacman.yProperty().bind(p.getUppfaertYUppi());
@@ -222,10 +265,12 @@ public class PacmanBord extends Pane {
                 System.out.println("niðri " + fxPacman.getY());
                 fxPacman.yProperty().bind(p.getUppfaertYUndir());
             } else {
+                erAVegg = false;
                 fxPacman.yProperty().unbind();
             }
         }else {
             fxPacman.yProperty().unbind();
+            erAVegg = false;
         }
     }
 
@@ -234,6 +279,7 @@ public class PacmanBord extends Pane {
      */
     public void athugaVeggtegund1Draugur(Veggtegund1 p) {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
             if (fxDraugur.getY() < p.getY()) {
                 draugastefna(270);
                 System.out.println("270");
@@ -246,18 +292,51 @@ public class PacmanBord extends Pane {
                 fxDraugur.yProperty().bind(p.getUppfaertYUndir());
 
             } else {
+                erAVeggD = false;
                 fxDraugur.yProperty().unbind();
             }
         } else{
+            erAVeggD = false;
             fxDraugur.yProperty().unbind();
         }
     }
 
-    /**
-     * Kíkir hvort að leikmaður er að snerta veggtegund 2 (lóðrétt) og hvort hann er hægra eða vinstra megin við hann.
-     */
+    public void athugaVeggtegund1Draugur2(Veggtegund1 p) {
+        if (fxDraugur2.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
+            if (fxDraugur2.getY() < p.getY()) {
+                draugastefna2(180);
+                System.out.println("270");
+                fxDraugur2.yProperty().bind(p.getUppfaertYUppi());
+
+            }
+            if (fxDraugur2.getY() > p.getY()) {
+                draugastefna2(0);
+                System.out.println("90");
+                fxDraugur2.yProperty().bind(p.getUppfaertYUndir());
+
+            } else {
+                erAVeggD = false;
+                fxDraugur2.yProperty().unbind();
+            }
+        } else{
+            erAVeggD = false;
+            fxDraugur2.yProperty().unbind();
+        }
+    }
+
+
+
+
+
+
+
+
+
+
     public void athugaVeggtegund2(Veggtegund2 p) {
         if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVegg = true;
             if (fxPacman.getX ()> p.getX()) {
                 fxPacman.xProperty().bind(p.getUppfaertXHaegri());
 
@@ -266,10 +345,12 @@ public class PacmanBord extends Pane {
                 fxPacman.xProperty().bind(p.getUppfaertXVinstri());
 
             } else {
+                erAVegg = false;
                 fxPacman.xProperty().unbind();
             }
         }else {
             fxPacman.xProperty().unbind();
+            erAVegg = false;
         }
     }
 
@@ -278,6 +359,7 @@ public class PacmanBord extends Pane {
      */
     public void athugaVeggtegund2Draugur(Veggtegund2 p) {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
             if (fxDraugur.getX() > p.getX()) {
                     draugastefna(0);
                     System.out.println("180");
@@ -292,18 +374,56 @@ public class PacmanBord extends Pane {
                 fxDraugur.xProperty().bind(p.getUppfaertXVinstri());
 
             } else {
+                erAVeggD = false;
                 fxDraugur.xProperty().unbind();
             }
         }else {
             fxDraugur.xProperty().unbind();
+            erAVeggD = false;
         }
     }
 
-    /**
-     * Kíkir hvort að Pacman er að snerta draug.
-     */
+    public void athugaVeggtegund2Draugur2(Veggtegund2 p) {
+        if (fxDraugur2.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
+            if (fxDraugur2.getX() > p.getX()) {
+                draugastefna2(90);
+                System.out.println("180");
+                fxDraugur2.xProperty().bind(p.getUppfaertXHaegri());
+                System.out.println("Draugastefna");
+
+            }
+            if (fxDraugur2.getX() < p.getX()) {
+                draugastefna2(270);
+                System.out.println("0");
+                System.out.print("niðri ");
+                fxDraugur2.xProperty().bind(p.getUppfaertXVinstri());
+
+            } else {
+                erAVeggD = false;
+                fxDraugur2.xProperty().unbind();
+            }
+        }else {
+            fxDraugur2.xProperty().unbind();
+            erAVeggD = false;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
     public boolean missaLif() {
         if (fxPacman.getBoundsInParent().intersects(fxDraugur.getBoundsInParent())) {
+            System.out.println("missa lif");
+            return true;
+        }else if (fxPacman.getBoundsInParent().intersects(fxDraugur2.getBoundsInParent())) {
+            System.out.println("missa lif");
             return true;
         }
         else {
@@ -311,9 +431,17 @@ public class PacmanBord extends Pane {
         }
     }
 
-    /**
-     * Eyðir Pacman og býr til nýjan í upphafsstöðu á leikborði.
-     */
+
+    public boolean etaMat(Matur f) {
+        if (fxPacman.getBoundsInParent().intersects(f.getBoundsInParent())) {
+            System.out.println("eta mat");
+            return true;
+        }
+        return false;
+    }
+
+
+
     public Pacman nyrPac() {
         if (fxPacman != null)
             getChildren().remove(fxPacman);
@@ -346,4 +474,15 @@ public class PacmanBord extends Pane {
         fxDraugur.stillumDraug();
         return fxDraugur;
     }
+
+    public Draugur nyrDraugur2() {
+        if (fxDraugur2 != null)
+            getChildren().remove(fxDraugur2);
+        fxDraugur2 = new Draugur();
+        getChildren().add(fxDraugur2);
+        fxDraugur2.stillumDraug();
+        return fxDraugur2;
+    }
+
+
 }

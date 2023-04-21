@@ -15,7 +15,7 @@ public class Veggtegund2 extends Rectangle {
      * Skilar aðeins hærri X staðsetningu veggsins. (staðsetning hægra megin við vegg)
      */
     public DoubleProperty getUppfaertXHaegri(){
-        uppfaertXProperty.set(xProperty().get() + 20);
+        uppfaertXProperty.set(xProperty().get() + 31);
         return uppfaertXProperty;
     }
 
@@ -23,7 +23,7 @@ public class Veggtegund2 extends Rectangle {
      * Skilar aðeins lægri X staðsetningu veggsins. (staðsetning vinstra megin við vegg)
      */
     public DoubleProperty getUppfaertXVinstri(){
-        uppfaertXProperty.set(xProperty().get() - 20);
+        uppfaertXProperty.set(xProperty().get() - 31);
         System.out.println();
         return uppfaertXProperty;
     }

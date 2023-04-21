@@ -1,75 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
 <?import hopverkefni.vidmot.*?>
+<?import javafx.scene.layout.*?>
 
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <Draugur fx:id="fxDraugur" x="285" y="220"/>
-    <Kyssuber fx:id="fxKyssuber" x="285" y="220"/>
-    <fx:include source="AllurMatur.fxml" fx:id="fxAllurmatur" />
-    <FeiturMatur y="100" x="500"/>
-    <FeiturMatur y="100" x="100"/>
-    <FeiturMatur y="350" x="500"/>
-    <FeiturMatur y="350" x="100"/>
+    <Draugur fx:id="fxDraugur" x="285" y="220" />
+    <Draugur fx:id="fxDraugur2" x="285" y="220" />
+
+    <Kyssuber fx:id="fxKyssuber" x="285" y="220" />
+    <fx:include fx:id="fxAllurmatur" source="AllurMatur.fxml" />
+    <FeiturMatur x="500" y="100" />
+    <FeiturMatur x="100" y="100" />
+    <FeiturMatur x="500" y="350" />
+    <FeiturMatur x="100" y="350" />
     <!-- Þak -->
-    <Veggtegund1 x="1" y="1"/>
-    <Veggtegund1 x="100" y="1"/>
-    <Veggtegund1 x="200" y="1"/>
-    <Veggtegund1 x="300" y="1"/>
-    <Veggtegund1 x="400" y="1"/>
-    <Veggtegund1 x="500" y="1"/>
+    <Veggtegund1 x="1" y="1" />
+    <Veggtegund1 x="100" y="1" />
+    <Veggtegund1 x="200" y="1" />
+    <Veggtegund1 x="300" y="1" />
+    <Veggtegund1 x="400" y="1" />
+    <Veggtegund1 x="500" y="1" />
 
     <!-- Gólf -->
-    <Veggtegund1 x="1" y="455"/>
-    <Veggtegund1 x="100" y="455"/>
-    <Veggtegund1 x="200" y="455"/>
-    <Veggtegund1 x="300" y="455"/>
-    <Veggtegund1 x="400" y="455"/>
-    <Veggtegund1 x="500" y="455"/>
+    <Veggtegund1 x="1" y="455" />
+    <Veggtegund1 x="100" y="455" />
+    <Veggtegund1 x="200" y="455" />
+    <Veggtegund1 x="300" y="455" />
+    <Veggtegund1 x="400" y="455" />
+    <Veggtegund1 x="500" y="455" />
 
     <!-- Vinstri veggur -->
-    <Veggtegund2 x="1" y="1"/>
-    <Veggtegund2 x="1" y="100"/>
-    <Veggtegund2 x="1" y="105"/>
-    <Veggtegund1 x="1" y="205"/>
-    <Veggtegund1 x="1" y="255"/>
-    <Veggtegund2 x="1" y="255"/>
-    <Veggtegund2 x="1" y="355"/>
+    <Veggtegund2 x="1" y="1" />
+    <Veggtegund2 x="1" y="100" />
+    <Veggtegund2 x="1" y="105" />
+    <Veggtegund1 x="1" y="205" />
+    <Veggtegund1 x="1" y="255" />
+    <Veggtegund2 x="1" y="255" />
+    <Veggtegund2 x="1" y="355" />
 
     <!-- Hægri veggur -->
-    <Veggtegund2 x="590" y="1"/>
-    <Veggtegund2 x="590" y="100"/>
-    <Veggtegund2 x="590" y="105"/>
-    <Veggtegund1 x="500" y="205"/>
-    <Veggtegund1 x="500" y="255"/>
-    <Veggtegund2 x="590" y="255"/>
-    <Veggtegund2 x="590" y="355"/>
+    <Veggtegund2 x="590" y="1" />
+    <Veggtegund2 x="590" y="100" />
+    <Veggtegund2 x="590" y="105" />
+    <Veggtegund1 x="500" y="205" />
+    <Veggtegund1 x="500" y="255" />
+    <Veggtegund2 x="590" y="255" />
+    <Veggtegund2 x="590" y="355" />
 
     <!-- Kassi vinstri uppi -->
-    <Veggtegund1 x="65" y="55"/>
-    <Veggtegund2 x="55" y="55"/>
-    <Veggtegund1 x="55" y="155"/>
-    <Veggtegund2 x="155" y="65"/>
+    <Veggtegund1 x="65" y="55" />
+    <Veggtegund2 x="55" y="55" />
 
     <!-- Kassi hægri uppi -->
-    <Veggtegund1 x="425" y="55"/>
-    <Veggtegund2 x="535" y="55"/>
-    <Veggtegund1 x="535" y="155"/>
-    <Veggtegund2 x="535" y="55"/>
+    <Veggtegund1 x="435.0" y="55" />
+    <Veggtegund2 x="535" y="55" />
+    <Veggtegund2 x="535" y="55" />
 
 
-    <Veggtegund1 x="435" y="400"/>
-    <Veggtegund2 x="535" y="310"/>
+    <Veggtegund1 x="435" y="400" />
+    <Veggtegund2 x="535" y="310" />
 
-    <Veggtegund1 x="55" y="400"/>
-    <Veggtegund2 x="55" y="310"/>
+    <Veggtegund1 x="55" y="400" />
+    <Veggtegund2 x="55" y="310" />
 
 
-    <Veggtegund1 x="250" y="55"/>
-    <Veggtegund1 x="250" y="400"/>
-    <Veggtegund2 x="240" y="175"/>
-    <Veggtegund2 x="350" y="175"/>
-    <Veggtegund2 x="1" y="1"/>
-    <Veggtegund2 x="1" y="1"/>
-    <Pacman fx:id="fxPacman" x="285" y="424"/>
+    <Veggtegund1 x="250" y="55" />
+    <Veggtegund1 x="250" y="400" />
+    <Veggtegund2 x="240" y="175" />
+    <Veggtegund2 x="350" y="175" />
+    <Veggtegund2 x="1" y="1" />
+    <Veggtegund2 x="1" y="1" />
+    <Pacman fx:id="fxPacman" x="285" y="424" />
 </fx:root>

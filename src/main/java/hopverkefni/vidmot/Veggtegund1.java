@@ -15,7 +15,7 @@ public class Veggtegund1 extends Rectangle {
      * Skilar aðeins efri Y staðsetningu veggsins. (staðsetning fyrir ofan vegg)
      */
     public DoubleProperty getUppfaertYUppi(){
-        uppfaertYProperty.set(yProperty().get()-28);
+        uppfaertYProperty.set(yProperty().get()-31);
         return uppfaertYProperty;
     }
 
