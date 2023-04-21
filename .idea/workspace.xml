@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="reyndi að laga smá drauginn">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/PacmanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/AllurMatur.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/AllurMatur.fxml" afterDir="false" />
+    <list default="true" id="f1f64261-627c-418e-90e7-9861e871a147" name="Changes" comment="bæta við mat">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hopverkefni/vidmot/Kyssuber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/Kyssuber.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hopverkefni/vidmot/leikbord-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -348,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682092388518</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="bæta við mat">
+      <created>1682094118151</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1682094118151</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,7 +370,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Lagaði stýriikerfiið á Pacman" />
     <MESSAGE value="Byrjað að vinna að því að láta vegg stoppa leikmann" />
     <MESSAGE value="Fegra allt adalvidmótið" />
     <MESSAGE value="Leikmaður missir líif ef hannn rekst á draug" />
@@ -389,6 +394,7 @@
     <MESSAGE value="lagaði textabox" />
     <MESSAGE value="lol" />
     <MESSAGE value="reyndi að laga smá drauginn" />
-    <option name="LAST_COMMIT_MESSAGE" value="reyndi að laga smá drauginn" />
+    <MESSAGE value="bæta við mat" />
+    <option name="LAST_COMMIT_MESSAGE" value="bæta við mat" />
   </component>
 </project>
