@@ -59,7 +59,7 @@ public class PacmanController {
 
 
 
-    public static final int INTERVAL = 50;
+    public static final int INTERVAL = 100;
 
 
     @FXML
@@ -130,7 +130,7 @@ public class PacmanController {
                         forADraug();
                         fxHjortuBord.drepahjarta(leikur.getLivesProperty()+1);
                     }
-                    if (leikur.getStiginProperty()==540){
+                    if (leikur.getStiginProperty()==1000){
                         Platform.runLater(() -> synaAlertB("Leikmaður"));
                         stoppaleik();
                     }
