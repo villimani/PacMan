@@ -3,10 +3,14 @@ package hopverkefni.vidmot;
 import javafx.scene.image.ImageView;
 
 public class Draugur extends ImageView {
-    int att=1;
+
     public Draugur () {
         FXML_Lestur.lesa(this, "draugur-view.fxml");
     }
+
+    /**
+     * Færir drauginn áfram samkvæmt hvaða átt hann snýr í.
+     */
     public void afram() {
         PacmanBord p = (PacmanBord) this.getParent();
         if (getRotate() == 0) {
@@ -20,13 +24,12 @@ public class Draugur extends ImageView {
         }
     }
 
+    /**
+     * Stillir staðsetningu draugs á leikborði.
+     */
     public void stillumDraug(){
         setY(225);
         setX(275);
-    }
-
-    public void skiptaUmAtt(){
-
     }
 
 

@@ -11,12 +11,17 @@ public class Veggtegund2 extends Rectangle {
         FXML_Lestur.lesa(this, "veggtegund2.fxml");
     }
 
-    // Hægra megin við vegg
+    /**
+     * Skilar aðeins hærri X staðsetningu veggsins. (staðsetning hægra megin við vegg)
+     */
     public DoubleProperty getUppfaertXHaegri(){
         uppfaertXProperty.set(xProperty().get() + 20);
         return uppfaertXProperty;
     }
-    // Vinstra megin við vegg
+
+    /**
+     * Skilar aðeins lægri X staðsetningu veggsins. (staðsetning vinstra megin við vegg)
+     */
     public DoubleProperty getUppfaertXVinstri(){
         uppfaertXProperty.set(xProperty().get() - 20);
         System.out.println();

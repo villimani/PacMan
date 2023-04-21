@@ -8,6 +8,9 @@ public class Kyssuber extends ImageView {
         FXML_Lestur.lesa(this, "Kyssuber.fxml");
     }
 
+    /**
+     * Stillir staðsetnigu kirsubers á leikborði.
+     */
     public void stillumKyssuber(){
         setY(225);
         setX(275);

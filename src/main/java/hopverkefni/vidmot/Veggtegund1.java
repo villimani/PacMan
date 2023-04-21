@@ -11,13 +11,17 @@ public class Veggtegund1 extends Rectangle {
         FXML_Lestur.lesa(this, "veggtegund1.fxml");
     }
 
-    // Ofan vegg
+    /**
+     * Skilar aðeins efri Y staðsetningu veggsins. (staðsetning fyrir ofan vegg)
+     */
     public DoubleProperty getUppfaertYUppi(){
         uppfaertYProperty.set(yProperty().get()-28);
         return uppfaertYProperty;
     }
 
-    // Undir vegg
+    /**
+     * Skilar aðeins lægri Y staðsetningu veggsins. (staðsetning fyrir neðan vegg)
+     */
     public DoubleProperty getUppfaertYUndir(){
         uppfaertYProperty.set(yProperty().get()+31);
         return uppfaertYProperty;

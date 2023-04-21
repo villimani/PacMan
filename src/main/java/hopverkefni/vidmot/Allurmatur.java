@@ -1,14 +1,12 @@
 package hopverkefni.vidmot;
 
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 
 public class Allurmatur extends Pane {
 
-
-
+    /**
+     * Les inn allann mat úr fxml skrá
+     */
     public Allurmatur() {
         FXML_Lestur.lesa(this, "leikbord-b.fxml");
 

@@ -7,6 +7,9 @@ public class Pacman extends ImageView {
         FXML_Lestur.lesa(this, "pacman-view.fxml");
     }
 
+    /**
+     * Færir pacman áfram samkvæmt áttinni sem hann snýr í.
+     */
     public void afram() {
         PacmanBord p = (PacmanBord) this.getParent();
         if (getRotate() == 90) {
@@ -20,6 +23,9 @@ public class Pacman extends ImageView {
         }
     }
 
+    /**
+     * Stillir staðsetningu pacmans á leikborði.
+     */
     public void stillumPacman(){
         setY(424);
         setX(285);

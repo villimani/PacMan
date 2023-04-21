@@ -3,8 +3,6 @@ package hopverkefni.vidmot;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
@@ -12,10 +10,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.util.Duration;
 import vinnsla.Leikur;
 import vinnsla.Stefna;
-
 import java.util.HashMap;
 import java.util.Optional;
-
 import static vinnsla.Stefna.*;
 
 public class PacmanController {
@@ -103,6 +99,9 @@ public class PacmanController {
     }
 
 
+    /**
+     * Hefur leik og sér um að kalla á öll föll sem við hönnuðum í PacmanBord klasanum.
+     */
     public void hefjaLeik() {
         fxStig.textProperty().
                 bind(leikur.stig().asString());
@@ -142,6 +141,10 @@ public class PacmanController {
         t.play();
     }
 
+    /**
+     * Dialog sem spyr hvort leikmaður vill halda áfram.
+     * @param s strengur sem á að sýna.
+     */
     private void synaAlertA(String s) {
         Alert a = new AdvorunDialog("", PAC, s + VILTU_HALDA_AFRAM);
         Optional<ButtonType> u = a.showAndWait();
@@ -149,6 +152,10 @@ public class PacmanController {
             ViewSwitcher.switchTo(View.MENU);
     }
 
+    /**
+     * Dialog sem spyr hvort leikmaður vill halda áfram.
+     * @param s strengur sem á að sýna.
+     */
     private void synaAlertB(String s) {
         Alert a = new AdvorunDialog("", PACB, s + VILTU_HALDA_AFRAMB);
         Optional<ButtonType> u = a.showAndWait();
@@ -156,25 +163,27 @@ public class PacmanController {
             ViewSwitcher.switchTo(View.MENU);
     }
 
-
+    /**
+     * Endurstillir Pacman og draug á leikborði þegar Pacman klessir á draug og lætur missa líf.
+     */
     public void forADraug() {
         leikur.missirlif();
         fxPacmanBord.endurstilla();
     }
 
+    /**
+     * Endurstillir leikinn.
+     */
     public void stoppaleik() {
         t.stop();
         leikur.leiklokid();
         fxPacmanBord.setBord();
     }
 
-
+    /**
+     * Stillir stefnu Pacmans.
+     */
     public void setStefna(int s ) {
         fxPacmanBord.setStefna(s);
     }
-
-
-
-
-
 }

@@ -17,6 +17,9 @@ public enum View {
         this.fileName = fileName;
     }
 
+    /**
+     * Skilar nafni skráar
+     */
     public String getFileName() {
         return fileName;
     }

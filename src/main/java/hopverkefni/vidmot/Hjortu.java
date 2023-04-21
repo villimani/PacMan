@@ -7,6 +7,9 @@ public class Hjortu extends ImageView {
         FXML_Lestur.lesa(this, "Hjortu.fxml");
     }
 
+    /**
+     * Stillir staðsetningu hjartanna á leikborðinu.
+     */
     public void stillumhjarta1(){
         setY(1);
         setX(1);

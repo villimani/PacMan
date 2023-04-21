@@ -16,12 +16,18 @@ public class HjortuBord extends Pane {
 
     }
 
+    /**
+     * Stillir hjörtun á leikborðið.
+     */
     public void nyrLeikur() {
         hjarta1 = nytthjarta1();
         hjarta2 = nytthjarta2();
         hjarta3 = nytthjarta3();
     }
 
+    /**
+     * Eyðir gömlum hjörtum ef eru og stillir ný allstaðar.
+     */
     public Hjortu nytthjarta1() {
         if (hjarta1 != null)
             getChildren().remove(hjarta1);
