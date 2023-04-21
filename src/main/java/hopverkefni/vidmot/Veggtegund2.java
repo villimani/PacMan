@@ -11,12 +11,15 @@ public class Veggtegund2 extends Rectangle {
         FXML_Lestur.lesa(this, "veggtegund2.fxml");
     }
 
-    public DoubleProperty getUppfaertXUppi(){
-        uppfaertXProperty.set(xProperty().get() - 45);
+    // Hægra megin við vegg
+    public DoubleProperty getUppfaertXHaegri(){
+        uppfaertXProperty.set(xProperty().get() + 40);
         return uppfaertXProperty;
     }
-    public DoubleProperty getUppfaertXUndir(){
-        uppfaertXProperty.set(xProperty().get()+45);
+    // Vinstra megin við vegg
+    public DoubleProperty getUppfaertXVinstri(){
+        uppfaertXProperty.set(xProperty().get() - 40);
+        System.out.println();
         return uppfaertXProperty;
     }
 }

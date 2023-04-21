@@ -11,13 +11,15 @@ public class Veggtegund1 extends Rectangle {
         FXML_Lestur.lesa(this, "veggtegund1.fxml");
     }
 
+    // Ofan vegg
     public DoubleProperty getUppfaertYUppi(){
-        uppfaertYProperty.set(yProperty().get() +39);
+        uppfaertYProperty.set(yProperty().get()-45);
         return uppfaertYProperty;
     }
 
+    // Undir vegg
     public DoubleProperty getUppfaertYUndir(){
-        uppfaertYProperty.set(yProperty().get()-39);
+        uppfaertYProperty.set(yProperty().get()+31);
         return uppfaertYProperty;
     }
 

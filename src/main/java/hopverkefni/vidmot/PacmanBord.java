@@ -143,11 +143,11 @@ public class PacmanBord extends Pane {
     }
 
     public void veggjaStoppD() {
-        for (int i= 6; i < fxVeggir.size() - 2; i++) {
+        for (int i= 6; i < fxVeggir.size() - 3; i++) {
             Rectangle p = (Rectangle) fxVeggir.get(i);
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
-               athugaVeggtegund1Draugur(v);
+                athugaVeggtegund1Draugur(v);
 
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
@@ -254,13 +254,12 @@ public class PacmanBord extends Pane {
     public void athugaVeggtegund2(Veggtegund2 p) {
         if (fxPacman.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVegg = true;
-            if (fxPacman.getY()> p.getY()) {
-                fxPacman.xProperty().bind(p.getUppfaertXUndir());
+            if (fxPacman.getX ()> p.getX()) {
+                fxPacman.xProperty().bind(p.getUppfaertXHaegri());
                 pacmanstefna(0);
             }
-            if (erAVeggD && fxPacman.getY() < p.getY()) {
-                System.out.print("niðri ");
-                fxPacman.xProperty().bind(p.getUppfaertXUppi());
+            if (fxPacman.getX() < p.getX()) {
+                fxPacman.xProperty().bind(p.getUppfaertXVinstri());
                 pacmanstefna(180);
             } else {
                 erAVegg = false;
@@ -275,16 +274,16 @@ public class PacmanBord extends Pane {
     public void athugaVeggtegund2Draugur(Veggtegund2 p) {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVeggD = true;
-            if (fxDraugur.getX() < p.getX()) {
+            if (fxDraugur.getX() > p.getX()) {
                 draugastefna(270);
-                fxDraugur.xProperty().bind(p.getUppfaertXUppi());
+                fxDraugur.xProperty().bind(p.getUppfaertXHaegri());
                 System.out.println("Draugastefna");
 
             }
-            if (erAVegg && fxDraugur.getX() > p.getX()) {
+            if (fxDraugur.getX() < p.getX()) {
                 draugastefna(270);
                 System.out.print("niðri ");
-                fxDraugur.xProperty().bind(p.getUppfaertXUndir());
+                fxDraugur.xProperty().bind(p.getUppfaertXVinstri());
 
             } else {
                 erAVeggD = false;
