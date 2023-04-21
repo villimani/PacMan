@@ -26,8 +26,7 @@ public class Draugur extends ImageView {
     }
 
     public void skiptaUmAtt(){
-        int att= (int) (Math.random()*3);
-        System.out.println(att);
+
     }
 
 

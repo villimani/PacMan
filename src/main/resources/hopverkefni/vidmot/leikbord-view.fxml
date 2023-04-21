@@ -47,20 +47,14 @@
     <!-- Veggir í miðju -->
     <Veggtegund1 x="55" y="55"/>
     <Veggtegund2 x="55" y="55"/>
-    <Veggtegund2 x="55" y="65"/>
     <Veggtegund1 x="435" y="55"/>
     <Veggtegund2 x="535" y="55"/>
-    <Veggtegund2 x="535" y="65"/>
     <Veggtegund1 x="435" y="400"/>
-    <Veggtegund2 x="535" y="300"/>
     <Veggtegund2 x="535" y="310"/>
     <Veggtegund1 x="55" y="400"/>
-    <Veggtegund2 x="55" y="300"/>
     <Veggtegund2 x="55" y="310"/>
-    <Veggtegund1 x="290" y="55"/>
-    <Veggtegund1 x="200" y="55"/>
-    <Veggtegund1 x="290" y="400"/>
-    <Veggtegund1 x="200" y="400"/>
+    <Veggtegund1 x="250" y="55"/>
+    <Veggtegund1 x="250" y="400"/>
     <Pacman fx:id="fxPacman" x="300" y="300"/>
 
 </fx:root>

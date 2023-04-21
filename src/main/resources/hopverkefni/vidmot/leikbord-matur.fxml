@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import hopverkefni.vidmot.*?>
+
+<fx:root  type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:include source="AllurMatur.fxml" fx:id="fxAllurmatur" />
+    <FeiturMatur y="100" x="300"/>
+    <FeiturMatur y="100" x="320"/>
+    <FeiturMatur y="100" x="340"/>
+    <FeiturMatur y="100" x="360"/>
+
+</fx:root>

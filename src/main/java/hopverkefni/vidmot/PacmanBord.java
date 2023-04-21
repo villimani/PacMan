@@ -3,9 +3,12 @@ package hopverkefni.vidmot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
+
+import java.io.IOException;
 
 public class PacmanBord extends Pane {
 
@@ -16,6 +19,9 @@ public class PacmanBord extends Pane {
 
     @FXML
     private Allurmatur fxAllurmatur;
+
+    @FXML
+    private Pane fxGeymsla;
 
     public boolean bordadilitill = false;
 
@@ -28,7 +34,7 @@ public class PacmanBord extends Pane {
     private ObservableList<Node> fxVeggir = FXCollections.observableArrayList();
 
     private ObservableList<Node> matur = FXCollections.observableArrayList();
-
+    private ObservableList<Node> maturGeymsla = FXCollections.observableArrayList();
 
     private final ObservableList<FeiturMatur> feiturMatur = FXCollections.observableArrayList();
 
@@ -36,8 +42,6 @@ public class PacmanBord extends Pane {
 
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
         fxVeggir = getChildren();
-
-
         matur= fxAllurmatur.getChildren();
 
 
@@ -47,7 +51,19 @@ public class PacmanBord extends Pane {
         }
     }
 
-    public void setBord(){
+    public void setBord (){
+        getChildren().removeAll(getChildren());
+
+        // lesa inn aftur upp á nýtt
+        FXML_Lestur.lesa(this, "leikbord-view.fxml");
+        fxVeggir = getChildren();
+        matur= fxAllurmatur.getChildren();
+
+        // Stilla lista með feita matnum
+        for (int i = 2; i <6; i++) {
+            feiturMatur.add((FeiturMatur) fxVeggir.get(i));
+        }
+
     }
 
     public void afram() {
@@ -60,11 +76,14 @@ public class PacmanBord extends Pane {
 
     public void aframDraugar() {
         fxDraugur.afram();
-        draugastefna();
     }
 
-    public void draugastefna() {
-        fxDraugur.setRotate(0);
+    public void draugastefna(int a) {
+       fxDraugur.setRotate(a);
+    }
+
+    public void pacmanstefna(int a) {
+        fxPacman.setRotate(a);
     }
 
 
@@ -117,9 +136,11 @@ public class PacmanBord extends Pane {
             if (p.getWidth() > 11) {
                 Veggtegund1 v = (Veggtegund1) fxVeggir.get(i);
                 athugaVeggtegund1Draugur(v);
+                athugaVeggtegund12Draugur(v);
             } else {
                 Veggtegund2 v = (Veggtegund2) fxVeggir.get(i);
                 athugaVeggtegund2Draugur(v);
+                athugaVeggtegund22Draugur(v);
             }
         }
     }
@@ -153,10 +174,12 @@ public class PacmanBord extends Pane {
             if (fxPacman.getY() < p.getY()) {
                 System.out.println("uppi " + fxPacman.getY());
                 fxPacman.yProperty().bind(p.getUppfaertYUppi());
+                pacmanstefna(90);
             }
             if (fxPacman.getY() > p.getY()) {
                 System.out.println("niðri " + fxPacman.getY());
                 fxPacman.yProperty().bind(p.getUppfaertYUndir());
+                pacmanstefna(270);
             } else {
                 erAVegg = false;
                 fxPacman.yProperty().unbind();
@@ -171,19 +194,30 @@ public class PacmanBord extends Pane {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVeggD = true;
             if (fxDraugur.getY() < p.getY()) {
+                draugastefna(90);
                 fxDraugur.yProperty().bind(p.getUppfaertYUppi());
+
             }
-            if (erAVeggD && fxDraugur.getY() > p.getY()) {
-                System.out.print("niðri ");
-                fxDraugur.yProperty().bind(p.getUppfaertYUndir());
             } else {
                 erAVeggD = false;
                 fxDraugur.yProperty().unbind();
             }
-        }else {
-            fxDraugur.yProperty().unbind();
+
+    }
+
+    public void athugaVeggtegund12Draugur(Veggtegund1 p) {
+        if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
+            erAVeggD = true;
+            if (fxDraugur.getY() > p.getY()) {
+                draugastefna(90);
+                fxDraugur.yProperty().bind(p.getUppfaertYUndir());
+
+            }
+        } else {
             erAVeggD = false;
+            fxDraugur.yProperty().unbind();
         }
+
     }
 
     public void athugaVeggtegund2(Veggtegund2 p) {
@@ -191,10 +225,12 @@ public class PacmanBord extends Pane {
             erAVegg = true;
             if (fxPacman.getY()> p.getY()) {
                 fxPacman.xProperty().bind(p.getUppfaertXUndir());
+                pacmanstefna(0);
             }
             if (erAVeggD && fxPacman.getY() < p.getY()) {
                 System.out.print("niðri ");
                 fxPacman.xProperty().bind(p.getUppfaertXUppi());
+                pacmanstefna(180);
             } else {
                 erAVegg = false;
                 fxPacman.xProperty().unbind();
@@ -209,14 +245,10 @@ public class PacmanBord extends Pane {
         if (fxDraugur.getBoundsInParent().intersects(p.getBoundsInParent())) {
             erAVeggD = true;
             if (fxDraugur.getX() < p.getX()) {
+                draugastefna(270);
                 fxDraugur.xProperty().bind(p.getUppfaertXUppi());
-            }
-            if (erAVegg && fxDraugur.getX() > p.getX()) {
-                System.out.print("niðri ");
-                fxDraugur.xProperty().bind(p.getUppfaertXUndir());
-            } else {
-                erAVeggD = false;
-                fxDraugur.xProperty().unbind();
+                System.out.println("Draugastefna");
+
             }
         }else {
             fxDraugur.xProperty().unbind();
@@ -224,10 +256,19 @@ public class PacmanBord extends Pane {
         }
     }
 
-    public void nyrLeikur() {
-        fxPacman = nyrPac();
-        fxDraugur = nyrDraugur();
+    public void athugaVeggtegund22Draugur(Veggtegund2 p) {
+        if (erAVegg && fxDraugur.getX() > p.getX()) {
+            draugastefna(270);
+            System.out.print("niðri ");
+            fxDraugur.xProperty().bind(p.getUppfaertXUndir());
+
+        } else {
+            erAVeggD = false;
+            fxDraugur.xProperty().unbind();
+        }
     }
+
+
 
 
     public boolean missaLif() {

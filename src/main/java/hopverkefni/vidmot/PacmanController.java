@@ -112,7 +112,6 @@ public class PacmanController {
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
                     fxtimi.setText(fxtimi.getText()+1);
-                    fxPacmanBord.setBord();
                     fxPacmanBord.veggjaStopp();
                     fxPacmanBord.veggjaStoppD();
                     fxPacmanBord.afram();
@@ -164,6 +163,7 @@ public class PacmanController {
     public void stoppaleik() {
         t.stop();
         leikur.leiklokid();
+        fxPacmanBord.setBord();
     }
 
 

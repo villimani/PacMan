@@ -2,7 +2,9 @@ package hopverkefni.vidmot;
 
 public enum View {
     LEIKUR("adal-view.fxml"),
-    MENU("menu-view.fxml");
+    MENU("menu-view.fxml"),
+
+    MATUR("leikbord-matur.fxml");
 
     private String fileName;
 
