@@ -79,12 +79,13 @@ public class PacmanController {
         fxStigin.getScene().addEventFilter(KeyEvent.ANY,event->{
             adgerdLykill(event);
                 });
+
     }
 
    private void adgerdLykill(KeyEvent event) {
         try {
             if (map.get(event.getCode()) == null) {
-                event.consume();
+                return;
             }
             else {
                 this.setStefna(map.get(event.getCode()).getGradur());
@@ -111,6 +112,7 @@ public class PacmanController {
         KeyFrame k = new KeyFrame(Duration.millis(INTERVAL),
                 e -> {
                     fxtimi.setText(fxtimi.getText()+1);
+                    fxPacmanBord.setBord();
                     fxPacmanBord.veggjaStopp();
                     fxPacmanBord.veggjaStoppD();
                     fxPacmanBord.afram();

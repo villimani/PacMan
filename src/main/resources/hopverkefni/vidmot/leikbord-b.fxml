@@ -6,6 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import hopverkefni.vidmot.Matur?>
 <fx:root type="javafx.scene.layout.Pane" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
-    <fx:include source="AllurMatur.fxml"/>
+
 </fx:root>

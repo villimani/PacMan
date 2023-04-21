@@ -7,8 +7,11 @@ import javafx.scene.layout.Pane;
 
 public class Allurmatur extends Pane {
 
+
+
     public Allurmatur() {
-        FXML_Lestur.lesa(this, "leikbord-view.fxml");
+        FXML_Lestur.lesa(this, "leikbord-b.fxml");
+
         }
 
     }

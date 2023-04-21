@@ -3,7 +3,6 @@ package hopverkefni.vidmot;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
@@ -15,11 +14,12 @@ public class PacmanBord extends Pane {
     @FXML
     private Draugur fxDraugur;
 
+    @FXML
     private Allurmatur fxAllurmatur;
 
     public boolean bordadilitill = false;
 
-    private PacmanController sc;
+
 
     private boolean erAVegg = false; // Held utan um hvort boltinn er á pallin eða ekki
 
@@ -29,18 +29,25 @@ public class PacmanBord extends Pane {
 
     private ObservableList<Node> matur = FXCollections.observableArrayList();
 
+
     private final ObservableList<FeiturMatur> feiturMatur = FXCollections.observableArrayList();
 
     public PacmanBord() {
+
         FXML_Lestur.lesa(this, "leikbord-view.fxml");
         fxVeggir = getChildren();
 
-        matur = fxAllurmatur.getChildren();
+
+        matur= fxAllurmatur.getChildren();
+
 
         // Stilla lista með feita matnum
         for (int i = 2; i <6; i++) {
             feiturMatur.add((FeiturMatur) fxVeggir.get(i));
         }
+    }
+
+    public void setBord(){
     }
 
     public void afram() {
@@ -65,7 +72,7 @@ public class PacmanBord extends Pane {
     // Fara í gegnum venjulegu stigin
     public boolean bordaMat() {
         for (Node f : matur) {
-            if (athugaMat(f)) {
+            if (athugaMat((Node) f)) {
                 getChildren().remove(f);
                 matur.remove(f);
                 return true;
